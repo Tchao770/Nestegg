@@ -1,0 +1,39 @@
+@import "~bootstrap/scss/bootstrap";
+
+$companyColorA: #007bbe;
+
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+        padding-top: 5px;
+        width: 167px;
+    }
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contactButton {
+    background: $companyColorA;
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+}
+
+.footerClass {
+    background: $companyColorA;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10em;
+    img {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-device-width: 700px) {
+    .navBar{
+        display: none;
+    }
+}
