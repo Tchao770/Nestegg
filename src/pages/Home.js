@@ -1,6 +1,7 @@
 import homeImg from "../assets/Homepage.jpg"
 import PhotoHeading from "../components/PhotoHeading";
 function Home() {
+    
     return (
         <div>
             <PhotoHeading src={homeImg} name="homepage-image" />
