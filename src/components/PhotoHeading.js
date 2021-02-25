@@ -4,7 +4,6 @@ const photoStyle = {
     objectFit: "cover",
 }
 
-
 const overFlowStyle = {
     display: "inline-block",
     overflow: "hidden",

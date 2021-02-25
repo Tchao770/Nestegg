@@ -14,19 +14,19 @@ function HeaderComponent() {
     return (
         <header >
             <nav className="navBar">
-                <Link to="/home" style={linkStyle}>
+                <Link to="/Nestegg/home" style={linkStyle}>
                     <img src={logo} alt="nav-logo" />
                 </Link>
-                <Link to="/mortgage" style={linkStyle}>
+                <Link to="/Nestegg/mortgage" style={linkStyle}>
                     MORTGAGE
                 </Link>
-                <Link to="/realestate" style={linkStyle}>
+                <Link to="/Nestegg/realestate" style={linkStyle}>
                     REAL ESTATE
                 </Link>
-                <Link to="/about" style={linkStyle}>
+                <Link to="/Nestegg/about" style={linkStyle}>
                     ABOUT
                 </Link>
-                <Link to="/contact">
+                <Link to="/Nestegg/contact">
                     <button className="contactButton">CONTACT US</button>
                 </Link>
                 <NavMenu />
