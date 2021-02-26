@@ -1,0 +1,50 @@
+$companyColorB: #007bbe;
+$companyColorG: #b0d470;
+
+.realEstatePage {
+    width: 70%;
+    margin: auto;
+    .pHeading {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+.quote {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 35px;
+}
+
+.estateContactLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 134px;
+    margin: auto;
+    text-decoration: none;
+}
+
+// Mobile devices
+@media screen and (max-width: 800px) {
+    .realEstatePage {
+        .pHeading {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+    .quote {
+        font-size: 25px;
+    }
+}
+// Big monitors
+@media screen and (min-width: 1400px) {
+    .realEstatePage {
+        width: 50%;
+    }
+    .quote {
+        width: 70%;
+    }
+}

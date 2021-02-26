@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logonav.png";
 import { IconContext } from "react-icons";
 import { HiMenu } from "react-icons/hi"
-import "./styles.scss";
+import "./componentStyles.scss";
 
 const linkStyle = {
     textDecoration: "none",
