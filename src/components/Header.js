@@ -13,21 +13,21 @@ function HeaderComponent() {
 
     return (
         <header >
-            <nav className="navBar">
-                <Link to="/Nestegg/home" style={linkStyle}>
+            <nav className="navBar" id="NavBar">
+                <Link to="/Nestegg/" style={linkStyle}>
                     <img src={logo} alt="nav-logo" />
                 </Link>
-                <Link to="/Nestegg/mortgage" style={linkStyle}>
+                <Link to="/Nestegg/mortgage" className="links" style={linkStyle}>
                     MORTGAGE
                 </Link>
-                <Link to="/Nestegg/realestate" style={linkStyle}>
+                <Link to="/Nestegg/realestate" className="links" style={linkStyle}>
                     REAL ESTATE
                 </Link>
-                <Link to="/Nestegg/about" style={linkStyle}>
+                <Link to="/Nestegg/about" className="links" style={linkStyle}>
                     ABOUT
                 </Link>
                 <Link to="/Nestegg/contact">
-                    <button className="contactButton">CONTACT US</button>
+                    <button className="contactButton links">CONTACT US</button>
                 </Link>
                 <NavMenu />
             </nav>
@@ -37,20 +37,20 @@ function HeaderComponent() {
 
 function NavMenu() {
     return (
-        <IconContext.Provider value={{ size: "3em" }}>
-            <div className="nav-mobile">
-                <a href="#!"><HiMenu onClick={() => myFunction} /></a>
+        <IconContext.Provider value={{ size: "3em", color: "black" }}>
+            <div className="icon">
+                <HiMenu className="nav-mobile" onClick={() => myFunction()} />
             </div>
         </IconContext.Provider>
     );
 }
 
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+    var x = document.getElementById("NavBar");
+    if (x.className === "navBar") {
         x.className += " responsive";
     } else {
-        x.className = "topnav";
+        x.className = "navBar";
     }
 }
 

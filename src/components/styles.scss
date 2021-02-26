@@ -22,6 +22,7 @@ $companyColorG: #b0d470;
 }
 .nav-mobile{
     display: none;
+    cursor: pointer;
 }
 
 .contactButton {
@@ -39,27 +40,38 @@ $companyColorG: #b0d470;
     height: 10em;
     img {
         width: 250px;
+        user-select: none;
     }
     z-index: -1;
 }
 
-@media screen and (max-width: 700px) {
+.articleDiv{
+    width: 90%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
     .navBar a:not(:first-child) {display: none;}
     .navBar a.icon {
       float: right;
       display: block;
     }
-    .navBar.responsive {position: relative;}
-    .navBar.responsive .icon {
+    .navBar.responsive {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .navBar.responsive .nav-mobile {
       position: absolute;
-      right: 0;
+      right: 5%;
       top: 0;
     }
-    .navBar.responsive a {
+    .navBar.responsive .links {
       float: none;
       display: block;
       text-align: left;
     }
+
     .nav-mobile{
         display: inline;
     }
