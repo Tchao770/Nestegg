@@ -1,4 +1,4 @@
-function ArticleDiv (props) {
+function ArticleDiv(props) {
     return (
         <article className={`articleDiv ${props.customclassName}`}>
             <h1 className="pHeading">{props.title}</h1>

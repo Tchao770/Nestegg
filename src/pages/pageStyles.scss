@@ -27,6 +27,32 @@ $companyColorG: #b0d470;
     text-decoration: none;
 }
 
+.contactPage {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.formDiv {
+    width: 28em;
+    padding: 1em;
+    border: solid;
+    border-color: rgba(71, 70, 70, 0.342);
+    border-width: 1px;
+    .formClass {
+        input {
+            margin: 5px 0 20px 0;
+            width: 26em;
+        }
+    }
+    .emailSubmit {
+        width: 26em;
+    }
+}
+
 // Mobile devices
 @media screen and (max-width: 800px) {
     .realEstatePage {
@@ -38,7 +64,12 @@ $companyColorG: #b0d470;
     .quote {
         font-size: 25px;
     }
+    .contactPage {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
 // Big monitors
 @media screen and (min-width: 1400px) {
     .realEstatePage {

@@ -17,4 +17,4 @@ function PhotoHeading(props) {
     );
 }
 
-export default PhotoHeading
+export default PhotoHeading;
