@@ -1,33 +1,43 @@
-import { useState } from "react";
+//import { useState } from "react";
 import contactImg from "../assets/ContactUs.jpg";
 import PhotoHeading from "../components/PhotoHeading";
 
 function Contact() {
-    const [form, setForm] = useState();
+    //const [form, setForm] = useState();
     return (
         <div>
             <PhotoHeading src={contactImg} name="contact-image" />
-            <div className="contactPage">
-                <div className="formDiv">
+            <div className="ContactPage">
+                <div className="FormDiv">
                     <h1>Contact Us</h1>
-                    <p>Have a question about real estate or your mortgage? Send us an email!</p>
-                    <form className="formClass">
+                    <p className="Paragraph">Have a question about real estate or your mortgage? Send us an email!</p>
+                    <form className="FormClass">
                         <label>NAME</label><br />
                         <input placeholder="Enter your name" />
                         <label>EMAIL ADDRESS</label><br />
                         <input placeholder="Enter your email" />
                         <label>MESSAGE</label><br />
                         <textarea rows="10" cols="49" placeholder="Hello, so about my mortgage..." />
-                        <button className="contactButton emailSubmit">SUBMIT</button>
+                        <button className="ContactButton EmailSubmit">SUBMIT</button>
                     </form>
                 </div>
-                <div className="moreInfo">
-                    <p>more info</p>
-                    <p>more info</p>
-                    <p>more info</p>
-                    <p>more info</p>
-                    <p>more info</p>
-                    <p>more info</p>
+                <div className="MoreInfo">
+                    <p className="ContactDetailsTitle">OUR OFFICE</p>
+                    <p className="Paragraph">
+                        16168 Beach Blvd., Suite 251<br />
+                        Huntington Beach,<br />
+                        CA 92647<br />
+                    </p>
+                    <p className="ContactDetailsTitle">WORKING HOURS</p>
+                    <p className="Paragraph">
+                        9AM - 3PM, Mon to Fri
+                    </p>
+                    <p className="ContactDetailsTitle">CONTACT</p>
+                    <p className="Paragraph">
+                        sambarkho@nestegginc.net<br />
+                        714.785.6703 Mobile<br />
+                        714.907.4390 Fax<br />
+                    </p>
                 </div>
 
             </div>

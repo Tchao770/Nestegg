@@ -1,7 +1,7 @@
 function ArticleDiv(props) {
     return (
-        <article className={`articleDiv ${props.customclassName}`}>
-            <h1 className="pHeading">{props.title}</h1>
+        <article className={`ArticleDiv ${props.customclassName}`}>
+            <h2 className="Heading">{props.title}</h2>
             <p>{props.paragraph}</p>
         </article>
     );

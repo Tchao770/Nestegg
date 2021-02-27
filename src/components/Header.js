@@ -13,21 +13,21 @@ function HeaderComponent() {
 
     return (
         <header >
-            <nav className="navBar" id="NavBar">
+            <nav className="NavBar" id="NavBar-id">
                 <Link to="/Nestegg/" style={linkStyle}>
                     <img src={logo} alt="nav-logo" />
                 </Link>
-                <Link to="/Nestegg/mortgage" className="links" style={linkStyle}>
+                <Link to="/Nestegg/mortgage" className="Links" style={linkStyle}>
                     MORTGAGE
                 </Link>
-                <Link to="/Nestegg/realestate" className="links" style={linkStyle}>
+                <Link to="/Nestegg/realestate" className="Links" style={linkStyle}>
                     REAL ESTATE
                 </Link>
-                <Link to="/Nestegg/about" className="links" style={linkStyle}>
+                <Link to="/Nestegg/about" className="Links" style={linkStyle}>
                     ABOUT
                 </Link>
                 <Link to="/Nestegg/contact">
-                    <button className="contactButton links">CONTACT US</button>
+                    <button className="ContactButton Links">CONTACT US</button>
                 </Link>
                 <NavMenu />
             </nav>
@@ -39,14 +39,14 @@ function NavMenu() {
     return (
         <IconContext.Provider value={{ size: "3em", color: "black" }}>
             <div className="icon">
-                <HiMenu className="nav-mobile" onClick={() => myFunction()} />
+                <HiMenu className="Nav-Mobile" onClick={() => myFunction()} />
             </div>
         </IconContext.Provider>
     );
 }
 
 function myFunction() {
-    var x = document.getElementById("NavBar");
+    var x = document.getElementById("NavBar-id");
     if (x.className === "navBar") {
         x.className += " responsive";
     } else {

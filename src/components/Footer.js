@@ -2,7 +2,7 @@ import footerLogo from "../assets/logofoot.png";
 
 function Footer() {
     return (
-        <footer className="footerClass">
+        <footer className="FooterClass">
             <img src={footerLogo} alt="footer-logo" />
         </footer>
     );

@@ -1,23 +1,39 @@
 $companyColorB: #007bbe;
 $companyColorG: #b0d470;
 
-.realEstatePage {
+.HomePage {
     width: 70%;
     margin: auto;
-    .pHeading {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    .AboutArticle {
+    }
+    img {
+        margin: auto;
+    }
+}
+
+.RealEstatePage {
+    width: 70%;
+    margin: auto;
+    .Heading {
         font-size: 30px;
         text-align: center;
         font-weight: bold;
     }
 }
-.quote {
+.Quote {
     text-align: center;
     width: 80%;
     margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-size: 35px;
 }
 
-.estateContactLink {
+.EstateContactLink {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,55 +43,90 @@ $companyColorG: #b0d470;
     text-decoration: none;
 }
 
-.contactPage {
+.ContactPage {
     margin: auto;
     margin-top: 2em;
     margin-bottom: 2em;
     width: 90%;
     display: flex;
     justify-content: space-around;
-}
-
-.formDiv {
-    width: 28em;
-    padding: 1em;
-    border: solid;
-    border-color: rgba(71, 70, 70, 0.342);
-    border-width: 1px;
-    .formClass {
-        input {
-            margin: 5px 0 20px 0;
+    .FormDiv {
+        width: 28em;
+        padding: 1em;
+        border: solid;
+        border-color: rgba(71, 70, 70, 0.342);
+        border-width: 1px;
+        .Paragraph {
+            color: #767679;
+        }
+        .FormClass {
+            input {
+                margin: 5px 0 20px 0;
+                width: 26em;
+            }
+            textarea {
+                width: 26em;
+            }
+        }
+        .EmailSubmit {
             width: 26em;
         }
     }
-    .emailSubmit {
-        width: 26em;
+    .MoreInfo {
+        .ContactDetailsTitle {
+            margin-bottom: 2px;
+            font-weight: bold;
+        }
+        .Paragraph {
+            color: #767679;
+        }
     }
 }
 
 // Mobile devices
-@media screen and (max-width: 800px) {
-    .realEstatePage {
-        .pHeading {
+@media screen and (max-width: 1000px) {
+    .HomePage {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5em;
+        .AboutArticle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .ContactButton {
+                margin-top: 1em;
+                margin-bottom: 2em;
+            }
+        }
+    }
+    .RealEstatePage {
+        .Heading {
             font-size: 20px;
             text-align: center;
         }
     }
-    .quote {
+    .Quote {
         font-size: 25px;
     }
-    .contactPage {
+    .ContactPage {
         flex-direction: column;
         align-items: center;
+        .MoreInfo {
+            text-align: center;
+        }
     }
 }
 
 // Big monitors
 @media screen and (min-width: 1400px) {
-    .realEstatePage {
+    .HomePage{
         width: 50%;
     }
-    .quote {
+    .RealEstatePage {
+        width: 50%;
+    }
+    .Quote {
         width: 70%;
     }
 }

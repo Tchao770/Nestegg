@@ -15,7 +15,7 @@ const sellParagraph =
     your net return and suits your needs. You’ll always be well-informed and aware of every step of the 
     process. Your best interest is always our top priority not just in selling your home for the best price 
     but also taking necessary steps to minimize liability and diligently work with buyers toward a smooth 
-    and successful sale.`
+    and successful sale.`;
 
 const quote =
     `Your home is your most valuable asset. Whether you’re a first time buyer
@@ -25,12 +25,12 @@ function RealEstate() {
     return (
         <div>
             <PhotoHeading src={realestateImg} name="real-estate-image" />
-            <h1 className="quote">{quote}</h1>
-            <div className="realEstatePage">
+            <h2 className="Quote">{quote}</h2>
+            <div className="RealEstatePage">
                 <ArticleDiv title="BUY" paragraph={buyParagraph} />
                 <ArticleDiv title="SELL" paragraph={sellParagraph} />
-                <Link to="/Nestegg/contact" className="estateContactLink">
-                    <button className="contactButton">TALK TO US!</button>
+                <Link to="/Nestegg/contact" className="EstateContactLink">
+                    <button className="ContactButton">TALK TO US!</button>
                 </Link>
             </div>
         </div>

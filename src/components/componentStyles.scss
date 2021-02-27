@@ -3,7 +3,7 @@
 $companyColorB: #007bbe;
 $companyColorG: #b0d470;
 
-.navBar {
+.NavBar {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -20,25 +20,25 @@ $companyColorG: #b0d470;
         }
     }
 }
-.nav-mobile {
+.Nav-Mobile {
     display: none;
     position: absolute;
     cursor: pointer;
 }
 
-.contactButton {
+.ContactButton {
     background: $companyColorB;
     color: white;
     border: none;
     padding: 10px 20px 10px 20px;
 }
 
-.contactButton:hover {
+.ContactButton:hover {
     background: $companyColorG;
     transition-duration: 0.5s;
 }
 
-.footerClass {
+.FooterClass {
     background: $companyColorB;
     position: absolute;
     bottom: 0;
@@ -51,39 +51,40 @@ $companyColorG: #b0d470;
     z-index: -1;
 }
 
-.articleDiv {
+.ArticleDiv {
     /*
     width: 90%;
     margin: auto;
     */
-    margin: 40px 0 40px 0;
+    margin-top: 2em;
 }
 
-@media screen and (max-width: 800px) {
-    .navBar a:not(:first-child) {
+// Mobile Devices
+@media screen and (max-width: 1000px) {
+    .NavBar a:not(:first-child) {
         display: none;
     }
-    .navBar a.icon {
+    .NavBar a.icon {
         float: right;
         display: block;
     }
-    .navBar.responsive {
+    .NavBar.responsive {
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-end;
     }
-    .navBar.responsive .nav-mobile {
+    .NavBar.responsive .Nav-Mobile {
         position: absolute;
         right: 5%;
         top: 0;
     }
-    .navBar.responsive .links {
+    .NavBar.responsive .Links {
         float: none;
         display: block;
         text-align: left;
     }
 
-    .nav-mobile {
+    .Nav-Mobile {
         display: inline;
     }
 }

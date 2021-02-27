@@ -5,7 +5,6 @@ const photoStyle = {
 }
 
 const overFlowStyle = {
-    display: "inline-block",
     overflow: "hidden",
     height: "500px"
 }
