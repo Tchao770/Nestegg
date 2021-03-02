@@ -3,7 +3,7 @@ import aboutImg from "../assets/About.jpg";
 
 function Mortgage() {
     return (
-        <div style={{ paddingBottom: "2.5rem" }}>
+        <div className="PageStyles">
             <PhotoHeading src={aboutImg} name="mortgage-image" />
         </div>
     )

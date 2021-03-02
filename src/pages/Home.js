@@ -12,7 +12,7 @@ const aboutParagraph =
 function Home() {
 
     return (
-        <div>
+        <div className="PageStyles">
             <PhotoHeading src={homeImg} name="homepage-image" />
             <article className="ArticleStyle">
                 <h2 className="Quote">Your home starts with you.</h2>

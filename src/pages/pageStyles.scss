@@ -1,6 +1,13 @@
 $companyColorB: #007bbe;
 $companyColorG: #b0d470;
 
+.PageStyles {
+    img {
+        //mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+        mask-image: linear-gradient(to top, transparent 0%, white 50%);
+    }
+}
+
 .HomePage {
     width: 70%;
     margin: auto;
@@ -8,8 +15,6 @@ $companyColorG: #b0d470;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    .AboutArticle {
-    }
     img {
         margin: auto;
     }
@@ -120,7 +125,7 @@ $companyColorG: #b0d470;
 
 // Big monitors
 @media screen and (min-width: 1400px) {
-    .HomePage{
+    .HomePage {
         width: 50%;
     }
     .RealEstatePage {

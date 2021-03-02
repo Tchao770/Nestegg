@@ -5,7 +5,7 @@ import PhotoHeading from "../components/PhotoHeading";
 function Contact() {
     //const [form, setForm] = useState();
     return (
-        <div>
+        <div className="PageStyles">
             <PhotoHeading src={contactImg} name="contact-image" />
             <div className="ContactPage">
                 <div className="FormDiv">

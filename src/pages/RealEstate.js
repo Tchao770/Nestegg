@@ -23,7 +23,7 @@ const quote =
 
 function RealEstate() {
     return (
-        <div>
+        <div className="PageStyles">
             <PhotoHeading src={realestateImg} name="real-estate-image" />
             <h2 className="Quote">{quote}</h2>
             <div className="RealEstatePage">
