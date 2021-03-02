@@ -15,20 +15,22 @@ function HeaderComponent() {
         <header >
             <nav className="NavBar" id="NavBar-id">
                 <Link to="/Nestegg/" style={linkStyle}>
-                    <img src={logo} alt="nav-logo" />
+                    <img src={logo} className="Nav-Home" alt="nav-logo" />
                 </Link>
-                <Link to="/Nestegg/mortgage" className="Links" style={linkStyle}>
-                    MORTGAGE
+                <div className="Link-List">
+                    <Link to="/Nestegg/mortgage" className="Link" style={linkStyle}>
+                        MORTGAGE
                 </Link>
-                <Link to="/Nestegg/realestate" className="Links" style={linkStyle}>
-                    REAL ESTATE
+                    <Link to="/Nestegg/realestate" className="Link" style={linkStyle}>
+                        REAL ESTATE
                 </Link>
-                <Link to="/Nestegg/about" className="Links" style={linkStyle}>
-                    ABOUT
+                    <Link to="/Nestegg/about" className="Link" style={linkStyle}>
+                        ABOUT
                 </Link>
-                <Link to="/Nestegg/contact">
-                    <button className="ContactButton Links">CONTACT US</button>
-                </Link>
+                    <Link to="/Nestegg/contact">
+                        <button className="ContactButton Link">CONTACT US</button>
+                    </Link>
+                </div>
                 <NavMenu />
             </nav>
         </header>
@@ -38,7 +40,7 @@ function HeaderComponent() {
 function NavMenu() {
     return (
         <IconContext.Provider value={{ size: "3em", color: "black" }}>
-            <div className="icon">
+            <div className="icon Nav-Mobile-Header">
                 <HiMenu className="Nav-Mobile" onClick={() => myFunction()} />
             </div>
         </IconContext.Provider>
@@ -47,11 +49,13 @@ function NavMenu() {
 
 function myFunction() {
     var x = document.getElementById("NavBar-id");
-    if (x.className === "navBar") {
-        x.className += " responsive";
+    var y = document.getElementsByClassName("Links");
+    if (x.className === "NavBar") {
+        x.className += `Responsive`;
     } else {
-        x.className = "navBar";
+        x.className = "NavBar";
     }
+    console.log(y);
 }
 
 export default HeaderComponent;

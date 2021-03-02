@@ -7,23 +7,31 @@ $companyColorG: #b0d470;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
-    img {
-        padding-top: 5px;
-        width: 167px;
-    }
-    ul {
-        margin: auto;
-        li {
-            list-style: none;
-        }
+}
+.Link-List {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .Link:hover {
+        background: $companyColorG;
+        transition-duration: 0.5s;
     }
 }
-.Nav-Mobile {
+.Nav-Home {
+    padding-top: 5px;
+    width: 167px;
+}
+.Nav-Mobile-Header {
     display: none;
     position: absolute;
     cursor: pointer;
+}
+.ArticleStyle {
+    margin-bottom: 1em;
 }
 
 .ContactButton {
@@ -44,47 +52,73 @@ $companyColorG: #b0d470;
     bottom: 0;
     width: 100%;
     height: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    padding-left: 1em;
     img {
-        width: 250px;
+        max-width: 100px;
         user-select: none;
+    }
+    p {
+        color: white;
+        margin-bottom: 0;
+        font-size: 15px;
     }
     z-index: -1;
 }
 
 .ArticleDiv {
-    /*
-    width: 90%;
-    margin: auto;
-    */
     margin-top: 2em;
+    margin-right: 1em;
 }
 
 // Mobile Devices
 @media screen and (max-width: 1000px) {
+    // Removes link buttons from header
     .NavBar a:not(:first-child) {
         display: none;
     }
-    .NavBar a.icon {
-        float: right;
-        display: block;
+    // Make hamburger appear
+    .Nav-Mobile-Header {
+        position: relative;
+        display: inline-block;
     }
-    .NavBar.responsive {
-        flex-direction: column;
+    // New class for navbar
+    .NavBarResponsive {
+        .Nav-Mobile-Header {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .Link-List {
+            width: 100%;
+            .Link {
+                display: block;
+                text-align: center;
+                padding: 12px 16px;
+                margin: auto;
+            }
+            .Link:hover{
+                width: inherit;
+            }
+        }
+    }
+    .Link-List {
+        width: 20em;
+        display: flex;
         justify-content: space-around;
-        align-items: flex-end;
+        flex-direction: column;
+        margin: auto;
+        .Link {
+            display: none;
+        }
     }
-    .NavBar.responsive .Nav-Mobile {
-        position: absolute;
-        right: 5%;
-        top: 0;
-    }
-    .NavBar.responsive .Links {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .Nav-Mobile {
-        display: inline;
+    .ArticleDiv {
+        margin-right: 0;
+        .Heading {
+            text-align: center;
+        }
     }
 }

@@ -1,25 +1,33 @@
 //import { useState } from "react";
 import contactImg from "../assets/ContactUs.jpg";
 import PhotoHeading from "../components/PhotoHeading";
+//import useForm from "../Hooks/UseForm";
 
 function Contact() {
-    //const [form, setForm] = useState();
+/*    const {
+        data,
+        error,
+        onChange,
+        onSubmit
+    } = useForm();*/
     return (
         <div className="PageStyles">
             <PhotoHeading src={contactImg} name="contact-image" />
             <div className="ContactPage">
-                <div className="FormDiv">
-                    <h1>Contact Us</h1>
-                    <p className="Paragraph">Have a question about real estate or your mortgage? Send us an email!</p>
-                    <form className="FormClass">
-                        <label>NAME</label><br />
-                        <input placeholder="Enter your name" />
-                        <label>EMAIL ADDRESS</label><br />
-                        <input placeholder="Enter your email" />
-                        <label>MESSAGE</label><br />
-                        <textarea rows="10" cols="49" placeholder="Hello, so about my mortgage..." />
-                        <button className="ContactButton EmailSubmit">SUBMIT</button>
-                    </form>
+                <div className="BorderForm">
+                    <div className="FormDiv">
+                        <h1>Contact Us</h1>
+                        <p className="Paragraph">Have a question about real estate or your mortgage? Send us an email!</p>
+                        <form className="FormClass">
+                            <label>NAME</label><br />
+                            <input placeholder="Enter your name" />
+                            <label>EMAIL ADDRESS</label><br />
+                            <input placeholder="Enter your email" /*value={data.email}*/ />
+                            <label>MESSAGE</label><br />
+                            <textarea rows="10" cols="49" placeholder="Hello, so about my mortgage..." />
+                            <button className="ContactButton EmailSubmit">SUBMIT</button>
+                        </form>
+                    </div>
                 </div>
                 <div className="MoreInfo">
                     <p className="ContactDetailsTitle">OUR OFFICE</p>

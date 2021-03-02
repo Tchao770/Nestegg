@@ -3,7 +3,7 @@ $companyColorG: #b0d470;
 
 .PageStyles {
     img {
-        //mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+        // Adds gradient to bottom of page pictures
         mask-image: linear-gradient(to top, transparent 0%, white 50%);
     }
 }
@@ -55,28 +55,31 @@ $companyColorG: #b0d470;
     width: 90%;
     display: flex;
     justify-content: space-around;
-    .FormDiv {
-        width: 28em;
-        padding: 1em;
+    .BorderForm {
+        padding: 3em;
         border: solid;
         border-color: rgba(71, 70, 70, 0.342);
         border-width: 1px;
-        .Paragraph {
-            color: #767679;
-        }
-        .FormClass {
-            input {
-                margin: 5px 0 20px 0;
-                width: 26em;
-            }
-            textarea {
-                width: 26em;
-            }
-        }
-        .EmailSubmit {
+        .FormDiv {
             width: 26em;
+            .Paragraph {
+                color: #767679;
+            }
+            .FormClass {
+                input {
+                    margin: 5px 0 20px 0;
+                    width: 26em;
+                }
+                textarea {
+                    width: 26em;
+                }
+            }
+            .EmailSubmit {
+                width: 26em;
+            }
         }
     }
+
     .MoreInfo {
         .ContactDetailsTitle {
             margin-bottom: 2px;
@@ -119,6 +122,7 @@ $companyColorG: #b0d470;
         align-items: center;
         .MoreInfo {
             text-align: center;
+            margin-top: 2em;
         }
     }
 }
