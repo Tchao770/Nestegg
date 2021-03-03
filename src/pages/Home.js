@@ -9,7 +9,8 @@ const aboutParagraph =
     feugiat. Etiam quis faucibus erat, non accumsan leo. Aliquam erat volutpat.
     Vestibulum ac faucibus eros. Cras ullamcorper gravida tellus ut consequat.`;
 
-function Home() {
+function Home({ match }) {
+    console.log(match);
     return (
         <div className="PageStyles">
             <PhotoHeading src={homeImg} name="homepage-image" />

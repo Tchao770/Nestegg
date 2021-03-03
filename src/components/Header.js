@@ -1,54 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logonav.png";
 import { IconContext } from "react-icons";
 import { HiMenu } from "react-icons/hi"
 import "./componentStyles.scss";
-
-const linkStyle = {
-    textDecoration: "none",
-    color: "black",
-}
-
-// Collapse the view on click
-const mobileView = (page) => {
-    var x = document.getElementById("NavBar-id");
-    var y = document.getElementsByClassName("Link");
-    if (x.className === "NavBarResponsive") {
-        x.className = "NavBar";
-    }
-    console.log(y);
-}
-
-function HeaderComponent() {
-    return (
-        <header >
-            <nav className="NavBar" id="NavBar-id">
-                <Link to="/Nestegg/" style={linkStyle}>
-                    <img src={logo} className="Nav-Home" alt="nav-logo" />
-                </Link>
-                <div className="Link-List">
-                    <Link to="/Nestegg/" className="Link" style={linkStyle} onClick={() => mobileView("Home")}>
-                        HOME
-                    </Link>
-                    <Link to="/Nestegg/mortgage" className="Link" style={linkStyle} onClick={() => mobileView("Mortgage")}>
-                        MORTGAGE
-                </Link>
-                    <Link to="/Nestegg/realestate" className="Link" style={linkStyle} onClick={() => mobileView("RealEstate")}>
-                        REAL ESTATE
-                </Link>
-                    <Link to="/Nestegg/about" className="Link" style={linkStyle} onClick={() => mobileView("About")}>
-                        ABOUT
-                </Link>
-                </div>
-                <Link to="/Nestegg/contact" className="Link">
-                    <button className="ContactButton" onClick={() => mobileView("contact")}>CONTACT US</button>
-                </Link>
-
-                <NavMenu />
-            </nav>
-        </header>
-    )
-}
 
 function NavMenu() {
     return (
@@ -69,6 +23,58 @@ function myFunction() {
         x.className = "NavBar";
     }
     console.log(y);
+}
+
+// Collapse the view on click
+const mobileView = (page) => {
+    let nav = document.getElementById("NavBar-id");
+    if (nav.className === "NavBarResponsive") {
+        nav.className = "NavBar";
+    }
+}
+
+function HeaderComponent() {
+    return (
+        <header >
+            <nav className="NavBar" id="NavBar-id">
+                <NavLink to="/Nestegg/">
+                    <img src={logo} className="Nav-Home" alt="nav-logo" />
+                </NavLink>
+                <div className="Link-List">
+                    <NavLink
+                        exact to="/Nestegg/"
+                        activeClassName="active"
+                        className="Link"
+                        onClick={() => mobileView("Home")}>
+                        HOME
+                    </NavLink>
+                    <NavLink to="/Nestegg/mortgage"
+                        activeClassName="active"
+                        className="Link"
+                        onClick={() => mobileView("Mortgage")}>
+                        MORTGAGE
+                    </NavLink>
+                    <NavLink to="/Nestegg/realestate"
+                        activeClassName="active"
+                        className="Link"
+                        onClick={() => mobileView("RealEstate")}>
+                        REAL ESTATE
+                    </NavLink>
+                    <NavLink to="/Nestegg/about"
+                        activeClassName="active"
+                        className="Link"
+                        onClick={() => mobileView("About")}>
+                        ABOUT
+                    </NavLink>
+                </div>
+                <NavLink to="/Nestegg/contact" id="Contact" className="Link">
+                    <button className="ContactButton" onClick={() => mobileView("Contact")}>CONTACT US</button>
+                </NavLink>
+
+                <NavMenu />
+            </nav>
+        </header>
+    )
 }
 
 export default HeaderComponent;

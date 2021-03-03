@@ -17,6 +17,18 @@ $companyColorG: #b0d470;
     align-items: center;
     .Link {
         position: relative;
+        text-decoration: none;
+        color: black;
+    }
+    .Link.active:before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $companyColorB;
+        visibility: visible;
+        transform: scaleX(1);
     }
 
     .Link:before {
