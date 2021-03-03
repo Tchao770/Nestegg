@@ -10,7 +10,6 @@ const aboutParagraph =
     Vestibulum ac faucibus eros. Cras ullamcorper gravida tellus ut consequat.`;
 
 function Home() {
-
     return (
         <div className="PageStyles">
             <PhotoHeading src={homeImg} name="homepage-image" />

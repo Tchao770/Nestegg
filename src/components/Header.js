@@ -10,11 +10,13 @@ const linkStyle = {
 }
 
 // Collapse the view on click
-const mobileView = () =>{
+const mobileView = (page) => {
     var x = document.getElementById("NavBar-id");
+    var y = document.getElementsByClassName("Link");
     if (x.className === "NavBarResponsive") {
         x.className = "NavBar";
     }
+    console.log(y);
 }
 
 function HeaderComponent() {
@@ -25,18 +27,21 @@ function HeaderComponent() {
                     <img src={logo} className="Nav-Home" alt="nav-logo" />
                 </Link>
                 <div className="Link-List">
-                    <Link to="/Nestegg/mortgage" className="Link" style={linkStyle} onClick={() => mobileView()}>
+                    <Link to="/Nestegg/" className="Link" style={linkStyle} onClick={() => mobileView("Home")}>
+                        HOME
+                    </Link>
+                    <Link to="/Nestegg/mortgage" className="Link" style={linkStyle} onClick={() => mobileView("Mortgage")}>
                         MORTGAGE
                 </Link>
-                    <Link to="/Nestegg/realestate" className="Link" style={linkStyle} onClick={() => mobileView()}>
+                    <Link to="/Nestegg/realestate" className="Link" style={linkStyle} onClick={() => mobileView("RealEstate")}>
                         REAL ESTATE
                 </Link>
-                    <Link to="/Nestegg/about" className="Link" style={linkStyle} onClick={() => mobileView()}>
+                    <Link to="/Nestegg/about" className="Link" style={linkStyle} onClick={() => mobileView("About")}>
                         ABOUT
                 </Link>
                 </div>
                 <Link to="/Nestegg/contact" className="Link">
-                    <button className="ContactButton"  onClick={() => mobileView()}>CONTACT US</button>
+                    <button className="ContactButton" onClick={() => mobileView("contact")}>CONTACT US</button>
                 </Link>
 
                 <NavMenu />
