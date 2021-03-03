@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Nestegg/static/css/main.0e23cb3f.chunk.css",
-    "main.js": "/Nestegg/static/js/main.33e2d705.chunk.js",
-    "main.js.map": "/Nestegg/static/js/main.33e2d705.chunk.js.map",
+    "main.css": "/Nestegg/static/css/main.da768d43.chunk.css",
+    "main.js": "/Nestegg/static/js/main.93147144.chunk.js",
+    "main.js.map": "/Nestegg/static/js/main.93147144.chunk.js.map",
     "runtime-main.js": "/Nestegg/static/js/runtime-main.7a207dac.js",
     "runtime-main.js.map": "/Nestegg/static/js/runtime-main.7a207dac.js.map",
     "static/js/2.807f3a97.chunk.js": "/Nestegg/static/js/2.807f3a97.chunk.js",
     "static/js/2.807f3a97.chunk.js.map": "/Nestegg/static/js/2.807f3a97.chunk.js.map",
     "index.html": "/Nestegg/index.html",
-    "static/css/main.0e23cb3f.chunk.css.map": "/Nestegg/static/css/main.0e23cb3f.chunk.css.map",
+    "static/css/main.da768d43.chunk.css.map": "/Nestegg/static/css/main.da768d43.chunk.css.map",
     "static/js/2.807f3a97.chunk.js.LICENSE.txt": "/Nestegg/static/js/2.807f3a97.chunk.js.LICENSE.txt",
     "static/media/About.a99b246b.jpg": "/Nestegg/static/media/About.a99b246b.jpg",
     "static/media/ContactUs.b14c64b6.jpg": "/Nestegg/static/media/ContactUs.b14c64b6.jpg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.7a207dac.js",
     "static/js/2.807f3a97.chunk.js",
-    "static/css/main.0e23cb3f.chunk.css",
-    "static/js/main.33e2d705.chunk.js"
+    "static/css/main.da768d43.chunk.css",
+    "static/js/main.93147144.chunk.js"
   ]
 }
