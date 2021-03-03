@@ -8,11 +8,10 @@ $companyColorG: #b0d470;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 30px 20px 30px;
 }
 .Link-List {
-    width: 80vw;
+    width: 60em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -38,6 +37,7 @@ $companyColorG: #b0d470;
     background: $companyColorB;
     color: white;
     border: none;
+    width: 145px;
     padding: 10px 20px 10px 20px;
 }
 
@@ -77,8 +77,10 @@ $companyColorG: #b0d470;
 // Mobile Devices
 @media screen and (max-width: 1000px) {
     // Removes link buttons from header
-    .NavBar a:not(:first-child) {
-        display: none;
+    .NavBar {
+        a:not(:first-child) {
+            display: none;
+        }
     }
     // Make hamburger appear
     .Nav-Mobile-Header {
@@ -87,6 +89,7 @@ $companyColorG: #b0d470;
     }
     // New class for navbar
     .NavBarResponsive {
+        margin-bottom: 1em;
         .Nav-Mobile-Header {
             position: absolute;
             right: 20px;
@@ -100,9 +103,15 @@ $companyColorG: #b0d470;
                 padding: 12px 16px;
                 margin: auto;
             }
-            .Link:hover{
+            .Link:hover {
                 width: inherit;
             }
+        }
+        .Link {
+            display: block;
+            text-align: center;
+            margin: auto;
+            text-decoration: none;
         }
     }
     .Link-List {

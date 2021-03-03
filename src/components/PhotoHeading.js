@@ -2,6 +2,9 @@ const photoStyle = {
     width: "100%",
     height: "100%",
     objectFit: "cover",
+    MozUserSelect: "none",
+    WebkitUserSelect: "none",
+    msUserSelect: "none"
 }
 
 const overFlowStyle = {

@@ -9,8 +9,15 @@ const linkStyle = {
     color: "black",
 }
 
-function HeaderComponent() {
+// Collapse the view on click
+const mobileView = () =>{
+    var x = document.getElementById("NavBar-id");
+    if (x.className === "NavBarResponsive") {
+        x.className = "NavBar";
+    }
+}
 
+function HeaderComponent() {
     return (
         <header >
             <nav className="NavBar" id="NavBar-id">
@@ -18,19 +25,20 @@ function HeaderComponent() {
                     <img src={logo} className="Nav-Home" alt="nav-logo" />
                 </Link>
                 <div className="Link-List">
-                    <Link to="/Nestegg/mortgage" className="Link" style={linkStyle}>
+                    <Link to="/Nestegg/mortgage" className="Link" style={linkStyle} onClick={() => mobileView()}>
                         MORTGAGE
                 </Link>
-                    <Link to="/Nestegg/realestate" className="Link" style={linkStyle}>
+                    <Link to="/Nestegg/realestate" className="Link" style={linkStyle} onClick={() => mobileView()}>
                         REAL ESTATE
                 </Link>
-                    <Link to="/Nestegg/about" className="Link" style={linkStyle}>
+                    <Link to="/Nestegg/about" className="Link" style={linkStyle} onClick={() => mobileView()}>
                         ABOUT
                 </Link>
-                    <Link to="/Nestegg/contact">
-                        <button className="ContactButton Link">CONTACT US</button>
-                    </Link>
                 </div>
+                <Link to="/Nestegg/contact" className="Link">
+                    <button className="ContactButton"  onClick={() => mobileView()}>CONTACT US</button>
+                </Link>
+
                 <NavMenu />
             </nav>
         </header>
