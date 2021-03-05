@@ -42,7 +42,7 @@ function Contact() {
                     </p>
                     <p className="ContactDetailsTitle">CONTACT</p>
                     <p className="Paragraph">
-                        sambarkho@nestegginc.net<br />
+                        info@nestegginc.net<br />
                         714.785.6703 Mobile<br />
                         714.907.4390 Fax<br />
                     </p>
