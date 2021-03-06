@@ -11,12 +11,20 @@ $companyColorG: #b0d470;
 .HomePage {
     width: 70%;
     margin: auto;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    img {
-        margin: auto;
+    .AboutSection {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "left right";
+        margin-bottom: 5em;
+        article {
+            margin-left: 1em;
+            justify-self: right;
+        }
+        img {
+            justify-self: center;
+        }
     }
 }
 
@@ -123,14 +131,18 @@ $companyColorG: #b0d470;
         display: flex;
         flex-direction: column;
         padding-bottom: 5em;
-        .AboutArticle {
+        .AboutSection {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            .ContactButton {
-                margin-top: 1em;
-                margin-bottom: 2em;
+            a {
+                display: flex;
+                justify-content: center;
+                .ContactButton {
+                    margin-top: 1em;
+                    margin-bottom: 2em;
+                }
             }
         }
     }

@@ -16,11 +16,11 @@ function About() {
                 <p>{aboutParagraph}</p>
                 <div className="Pictures">
                     <div className="Profile">
-                        <img src={profileImg} alt="Agent1"/>
+                        <img src={profileImg} alt="Agent1" />
                         <h3>Sammy</h3>
                     </div>
                     <div className="Profile">
-                        <img src={profileImg} alt="Agent2"/>
+                        <img src={profileImg} alt="Agent2" />
                         <h3>Eman</h3>
                     </div>
                 </div>

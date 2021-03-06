@@ -4,7 +4,7 @@ const photoStyle = {
     objectFit: "cover",
     MozUserSelect: "none",
     WebkitUserSelect: "none",
-    msUserSelect: "none"
+    msUserSelect: "none",
 }
 
 const overFlowStyle = {

@@ -4,12 +4,12 @@ import PhotoHeading from "../components/PhotoHeading";
 //import useForm from "../Hooks/UseForm";
 
 function Contact() {
-/*    const {
-        data,
-        error,
-        onChange,
-        onSubmit
-    } = useForm();*/
+    /*    const {
+            data,
+            error,
+            onChange,
+            onSubmit
+        } = useForm();*/
     return (
         <div className="PageStyles">
             <PhotoHeading src={contactImg} name="contact-image" />
@@ -32,13 +32,9 @@ function Contact() {
                 <div className="MoreInfo">
                     <p className="ContactDetailsTitle">OUR OFFICE</p>
                     <p className="Paragraph">
-                        16168 Beach Blvd., Suite 251<br />
-                        Huntington Beach,<br />
-                        CA 92647<br />
-                    </p>
-                    <p className="ContactDetailsTitle">WORKING HOURS</p>
-                    <p className="Paragraph">
-                        9AM - 3PM, Mon to Fri
+                        12437 Lewis Street, Suite 206<br />
+                        Garden Grove<br />
+                        CA 92840<br />
                     </p>
                     <p className="ContactDetailsTitle">CONTACT</p>
                     <p className="Paragraph">
