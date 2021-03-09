@@ -14,7 +14,7 @@ const overFlowStyle = {
 function PhotoHeading(props) {
     return (
         <div style={overFlowStyle}>
-            <img src={props.src} alt={props.name} style={photoStyle} />
+            <img src={props.src} className="PageImg" alt={props.name} style={photoStyle} />
         </div>
     );
 }

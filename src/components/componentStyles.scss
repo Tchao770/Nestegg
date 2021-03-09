@@ -107,6 +107,7 @@ $companyColorG: #b0d470;
 }
 
 // Mobile Devices
+// Should account for minimum size 360px
 @media screen and (max-width: 1000px) {
     // Removes link buttons from header
     .NavBar {
@@ -162,6 +163,11 @@ $companyColorG: #b0d470;
         margin-right: 0;
         .Heading {
             text-align: center;
+        }
+    }
+    .FooterClass{
+        p{
+            font-size: 4px;
         }
     }
 }
