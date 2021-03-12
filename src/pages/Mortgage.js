@@ -1,5 +1,5 @@
 import PhotoHeading from "../components/PhotoHeading";
-import mortgageImg from "../assets/Mortgage.jpg";
+import mortgageImg from "../assets/Mortgagecentered.jpg";
 
 function Mortgage() {
     return (

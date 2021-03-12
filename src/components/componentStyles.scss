@@ -63,6 +63,30 @@ $companyColorG: #b0d470;
     white-space: pre-line;
 }
 
+.MapBalloon {
+    position: relative;
+}
+
+.MapBalloon:before {
+    content: "https://goo.gl/maps/RjJoFgRFbX1FN6mC8";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 30px;
+    left: -105px;
+    background-color: $companyColorB;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-out;
+}
+.MapBalloon:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
 .ContactButton {
     background: $companyColorB;
     color: white;
@@ -105,10 +129,18 @@ $companyColorG: #b0d470;
     margin-top: 2em;
     margin-right: 1em;
 }
-
-// Mobile Devices
+// Mobile Screens
 // Should account for minimum size 360px
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
+    .FooterClass {
+        p {
+            font-size: 4px;
+        }
+    }
+}
+
+// Smaller screens
+@media screen and (max-width: 1300px) {
     // Removes link buttons from header
     .NavBar {
         a:not(:first-child) {
@@ -163,11 +195,6 @@ $companyColorG: #b0d470;
         margin-right: 0;
         .Heading {
             text-align: center;
-        }
-    }
-    .FooterClass{
-        p{
-            font-size: 4px;
         }
     }
 }

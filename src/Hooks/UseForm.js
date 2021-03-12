@@ -1,21 +1,20 @@
 import { useState } from "react";
 
-function useForm(options) {
-    const [data, setData] = useState({});
+// https://felixgerschau.com/react-hooks-form-validation-typescript/
+export function useForm(options) {
+    const [data, setData] = useState(options?.initialValues || {});
     const [error, setError] = useState({});
-    const onChange = () => {
-        setData();
-        setError();
+    const handleChange = (field) => {
+        console.log(data[field]);
     }
-    const onSubmit = () => {
-
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert("files submitted!");
     }
     return {
         data,
         error,
-        onChange,
-        onSubmit
+        handleChange,
+        handleSubmit
     }
 }
-
-export default useForm;

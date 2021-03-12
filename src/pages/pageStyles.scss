@@ -94,6 +94,7 @@ $companyColorG: #b0d470;
         "form dropbox"
         "form dropbox";
     grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
     justify-items: center;
     .BorderForm {
         grid-area: form;
@@ -107,6 +108,11 @@ $companyColorG: #b0d470;
                 color: #767679;
             }
             .FormClass {
+                label:after{
+                    content: ' *';
+                    color: red;
+                    font-size: 1.2em;
+                }
                 input {
                     margin: 5px 0 20px 0;
                     width: 100%;
@@ -143,8 +149,13 @@ $companyColorG: #b0d470;
     }
 }
 
-// Mobile devices
-@media screen and (max-width: 1000px) {
+// Mobile Screens
+@media screen and (max-width: 700px) {
+
+}
+
+// Smaller screens
+@media screen and (max-width: 1300px) {
     .HomePage {
         display: flex;
         flex-direction: column;
@@ -178,7 +189,8 @@ $companyColorG: #b0d470;
             "form"
             "map"
             "dropbox";
-            grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+        justify-content: center;
         .BorderForm {
             grid-column: auto;
             padding: 1em;

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import homeImg from "../assets/Homepage.jpg"
+import homeImg from "../assets/Homepagecentered.jpg"
 import PhotoHeading from "../components/PhotoHeading";
 import ArticleDiv from "../components/ArticleDiv";
 
