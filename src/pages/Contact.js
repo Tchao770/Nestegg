@@ -1,45 +1,63 @@
 //import { useState } from "react";
 import contactImg from "../assets/ContactUs.jpg";
 import PhotoHeading from "../components/PhotoHeading";
-import GoogleMapReact from "../components/Maps"
-import { useForm } from "../Hooks/UseForm";
+import GoogleMapReact from "../components/Maps";
+import { useForm } from "../hooks/UseForm";
 
 function Contact() {
     const {
         data,
-        error,
+        errors,
         handleChange,
         handleSubmit
     } = useForm({
         validations: {
-            name: {
+            fname: {
+                required: {
+                    value: true,
+                    message: 'Name field is required',
+                },
                 pattern: {
-                    value: '',
-                    errorMessage:
-                        "Your name cannot contain numbers or special characters!",
+                    value: '^[A-Z a-z]*$',
+                    message:
+                        "Your name cannot contain numbers or special characters",
                 },
             },
             email: {
+                required: {
+                    value: true,
+                    message: 'Email field is required',
+                },
                 pattern: {
-                    value: '',
-                    errorMessage:
-                        "",
+                    value: '^([a-zA-Z0-9]+(?:[.-]?[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:[.-]?[a-zA-Z0-9]+)*\.[a-zA-Z]{2,7})$',  // regular expression for emails
+                    message:
+                        "Please enter a valid email",
                 },
             },
             phone: {
+                required: {
+                    value: true,
+                    message: 'Phone field is required',
+                },
                 pattern: {
-                    value: '',
-                    errorMessage:
-                        "",
+                    value: '^[0-9\(\) -]*$',
+                    message:
+                        "Please enter a valid number",
                 },
             },
+            message: {
+                required: {
+                    value: true,
+                    message: 'Message field is required',
+                },
+            }
         },
         onSubmit: () => alert('Message Sent!'),
-        initialValues:{
-            "name": '',
-            "email": '',
-            "number": '',
-            "message": '',
+        initialValues: {
+            fname: '',
+            email: '',
+            phone: '',
+            message: '',
         }
     });
 
@@ -55,27 +73,31 @@ function Contact() {
                             <label>NAME</label><br />
                             <input
                                 placeholder="Enter your name"
-                                /*value={data.email || ''}*/
-                                onChange={() => handleChange("name")}
-                                required />
+                                name="fname"
+                                value={data["fname"] || ''}
+                                onChange={handleChange} />
+                            {errors.fname && <p className="error">{errors.fname}</p>}
                             <label>EMAIL ADDRESS</label><br />
                             <input
                                 placeholder="Enter your email"
-                                /*value={data.email || ''}*/
-                                onChange={() => handleChange("email")}
-                                required />
+                                name="email"
+                                value={data["email"] || ''}
+                                onChange={handleChange} />
+                            {errors.email && <p className="error">{errors.email}</p>}
                             <label>PHONE</label><br />
                             <input
                                 placeholder="Enter your phone number"
-                                /*value={data.email || ''}*/
-                                onChange={() => handleChange("phone")}
-                                required />
+                                name="phone"
+                                value={data["phone"] || ''}
+                                onChange={handleChange} />
+                            {errors.phone && <p className="error">{errors.phone}</p>}
                             <label>MESSAGE</label><br />
                             <textarea rows="10" cols="49"
                                 placeholder="Hello..."
-                                /*value={data.email || ''}*/
-                                onChange={() => handleChange("message")}
-                                required />
+                                name="message"
+                                value={data["message"] || ''}
+                                onChange={handleChange} />
+                            {errors.message && <p className="error">{errors.message}</p>}
                             <button className="ContactButton EmailSubmit" type="submit">SUBMIT</button>
                         </form>
                     </div>
@@ -97,7 +119,7 @@ function Contact() {
                 <div className="DropBox" >
                     <button>Dropbox placeholder</button>
                 </div>
-            </div>  
+            </div>
         </div>
     );
 }

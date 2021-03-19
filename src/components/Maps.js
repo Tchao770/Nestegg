@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import GoogleMapReact from 'google-map-react';
-import logoImg from '../assets/logotab.png';
+//import logoImg from '../assets/logotab.png';
 import { FiMapPin } from 'react-icons/fi';
 import { IconContext } from "react-icons";
 
