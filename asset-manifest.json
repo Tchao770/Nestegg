@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Nestegg/static/css/main.5edb62d2.chunk.css",
-    "main.js": "/Nestegg/static/js/main.99311516.chunk.js",
-    "main.js.map": "/Nestegg/static/js/main.99311516.chunk.js.map",
+    "main.css": "/Nestegg/static/css/main.97a19b20.chunk.css",
+    "main.js": "/Nestegg/static/js/main.7a4d895e.chunk.js",
+    "main.js.map": "/Nestegg/static/js/main.7a4d895e.chunk.js.map",
     "runtime-main.js": "/Nestegg/static/js/runtime-main.7a207dac.js",
     "runtime-main.js.map": "/Nestegg/static/js/runtime-main.7a207dac.js.map",
-    "static/js/2.40096792.chunk.js": "/Nestegg/static/js/2.40096792.chunk.js",
-    "static/js/2.40096792.chunk.js.map": "/Nestegg/static/js/2.40096792.chunk.js.map",
+    "static/js/2.bcb1ecbe.chunk.js": "/Nestegg/static/js/2.bcb1ecbe.chunk.js",
+    "static/js/2.bcb1ecbe.chunk.js.map": "/Nestegg/static/js/2.bcb1ecbe.chunk.js.map",
     "index.html": "/Nestegg/index.html",
-    "static/css/main.5edb62d2.chunk.css.map": "/Nestegg/static/css/main.5edb62d2.chunk.css.map",
-    "static/js/2.40096792.chunk.js.LICENSE.txt": "/Nestegg/static/js/2.40096792.chunk.js.LICENSE.txt",
+    "static/css/main.97a19b20.chunk.css.map": "/Nestegg/static/css/main.97a19b20.chunk.css.map",
+    "static/js/2.bcb1ecbe.chunk.js.LICENSE.txt": "/Nestegg/static/js/2.bcb1ecbe.chunk.js.LICENSE.txt",
     "static/media/About.b163ed1e.jpg": "/Nestegg/static/media/About.b163ed1e.jpg",
     "static/media/ContactUs.b14c64b6.jpg": "/Nestegg/static/media/ContactUs.b14c64b6.jpg",
     "static/media/Homepagecentered.c8c769af.jpg": "/Nestegg/static/media/Homepagecentered.c8c769af.jpg",
@@ -17,13 +17,12 @@
     "static/media/lenderLogo.a940bd48.png": "/Nestegg/static/media/lenderLogo.a940bd48.png",
     "static/media/logofoot.f77ed0de.png": "/Nestegg/static/media/logofoot.f77ed0de.png",
     "static/media/logonav.a4fad6da.png": "/Nestegg/static/media/logonav.a4fad6da.png",
-    "static/media/logotab.f9a32e4f.png": "/Nestegg/static/media/logotab.f9a32e4f.png",
     "static/media/realestate.c53c2cc9.jpg": "/Nestegg/static/media/realestate.c53c2cc9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7a207dac.js",
-    "static/js/2.40096792.chunk.js",
-    "static/css/main.5edb62d2.chunk.css",
-    "static/js/main.99311516.chunk.js"
+    "static/js/2.bcb1ecbe.chunk.js",
+    "static/css/main.97a19b20.chunk.css",
+    "static/js/main.7a4d895e.chunk.js"
   ]
 }
