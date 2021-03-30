@@ -4,6 +4,8 @@ import PhotoHeading from "../components/PhotoHeading";
 import GoogleMapReact from "../components/Maps";
 import { useForm } from "../hooks/UseForm";
 
+const googleMapSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.1727903986266!2d-117.90003788393508!3d33.78203583936687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd820edf7ee6b%3A0xb7b36013ddb9de90!2s12437%20Lewis%20St%20%23206%2C%20Garden%20Grove%2C%20CA%2092840!5e0!3m2!1sen!2sus!4v1617134261427!5m2!1sen!2sus";
+
 function Contact() {
     const {
         data,
@@ -29,7 +31,7 @@ function Contact() {
                     message: 'Email field is required',
                 },
                 pattern: {
-                    value: '^([a-zA-Z0-9]+(?:[.-]?[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:[.-]?[a-zA-Z0-9]+)*\.[a-zA-Z]{2,7})$',  // regular expression for emails
+                    value: '^[A-za-z0-9-_.]+@[A-za-z0-9-_.]+\.[A-za-z0-9-_.]+$',  // regular expression for emails
                     message:
                         "Please enter a valid email",
                 },
@@ -103,7 +105,8 @@ function Contact() {
                     </div>
                 </div>
                 <div className="MoreInfo">
-                    <GoogleMapReact />
+                    {/*<GoogleMapReact />*/}
+                    <iframe src={googleMapSrc} width="auto" height="auto" style={{border:"0"}} allowfullscreen="" loading="lazy"></iframe>
                     <p className="ContactDetailsTitle">OUR OFFICE</p>
                     <p className="Paragraph">
                         12437 Lewis Street, Suite 206<br />

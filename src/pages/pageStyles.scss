@@ -39,7 +39,7 @@ $companyColorG: #b0d470;
     justify-content: center;
     flex-direction: column;
     margin: auto;
-    h2{
+    h2 {
         text-align: center;
     }
     .Calculator {
@@ -237,13 +237,11 @@ $companyColorG: #b0d470;
             "form"
             "map"
             "dropbox";
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         justify-content: center;
+        margin: auto;
         .BorderForm {
-            grid-column: auto;
             padding: 1em;
-            margin-left: 1em;
-            margin-right: 1em;
         }
         .MoreInfo {
             height: 100%;

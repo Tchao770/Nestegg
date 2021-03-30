@@ -58,6 +58,20 @@ $companyColorG: #b0d470;
     position: absolute;
     cursor: pointer;
 }
+
+.OverFlowHandler {
+    overflow: hidden;
+    height: 500px;
+    .PageImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        --MozUserSelect: none;
+        --WebkitUserSelect: none;
+        --ms-user-select: none;
+    }
+}
+
 .ArticleStyle {
     margin-bottom: 1em;
     white-space: pre-line;
@@ -190,6 +204,9 @@ $companyColorG: #b0d470;
         .Link {
             display: none;
         }
+    }
+    .OverFlowHandler {
+        height: 250px;
     }
     .ArticleDiv {
         margin-right: 0;
