@@ -4,7 +4,7 @@ $companyColorG: #b0d470;
 .PageStyles {
     .PageImg {
         // Adds gradient to bottom of page pictures
-        mask-image: linear-gradient(to top, transparent 0%, white 50%);
+        mask-image: linear-gradient(to top, transparent 0%, white 100%);
     }
 }
 
@@ -27,7 +27,6 @@ $companyColorG: #b0d470;
         }
     }
     a {
-        max-width: fit-content;
         text-decoration: none;
     }
 }
@@ -180,7 +179,8 @@ $companyColorG: #b0d470;
     .MoreInfo {
         grid-area: map;
         width: 500px;
-        height: 250px;
+        display: flex;
+        flex-direction: column;
         .ContactDetailsTitle {
             margin-bottom: 2px;
             font-weight: bold;
@@ -216,6 +216,7 @@ $companyColorG: #b0d470;
             a {
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 .ContactButton {
                     margin-top: 1em;
                     margin-bottom: 2em;
@@ -240,11 +241,11 @@ $companyColorG: #b0d470;
         grid-template-columns: 100%;
         justify-content: center;
         margin: auto;
+        width: 90%;
         .BorderForm {
             padding: 1em;
         }
         .MoreInfo {
-            height: 100%;
             justify-self: center;
             text-align: center;
             margin-top: 2em;

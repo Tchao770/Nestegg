@@ -106,7 +106,7 @@ function Contact() {
                 </div>
                 <div className="MoreInfo">
                     {/*<GoogleMapReact />*/}
-                    <iframe src={googleMapSrc} width="auto" height="auto" style={{border:"0"}} allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src={googleMapSrc} style={{border:"0"}} allowfullscreen="" loading="lazy"></iframe>
                     <p className="ContactDetailsTitle">OUR OFFICE</p>
                     <p className="Paragraph">
                         12437 Lewis Street, Suite 206<br />
