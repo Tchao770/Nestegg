@@ -127,7 +127,6 @@ $companyColorG: #b0d470;
     grid-template-areas:
         "form map"
         "form map"
-        "form dropbox"
         "form dropbox";
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
@@ -180,6 +179,7 @@ $companyColorG: #b0d470;
         grid-area: map;
         width: 500px;
         display: flex;
+        align-self: center;
         flex-direction: column;
         .ContactDetailsTitle {
             margin-bottom: 2px;
@@ -191,10 +191,14 @@ $companyColorG: #b0d470;
     }
     .DropBox {
         grid-area: dropbox;
-        align-self: center;
-        max-width: 516px;
-        max-height: 1fr;
-        background-color: #007bbe;
+        align-self: end;
+        border: solid;
+        border-color: rgba(71, 70, 70, 0.342);
+        border-width: 1px;
+        #CitrixDropbox {
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
@@ -249,6 +253,10 @@ $companyColorG: #b0d470;
             justify-self: center;
             text-align: center;
             margin-top: 2em;
+        }
+        #CitrixDropbox {
+            width: 350px;
+            height: 750px;
         }
     }
 }
