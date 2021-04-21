@@ -125,12 +125,12 @@ $companyColorG: #b0d470;
     display: grid;
     width: 70%;
     grid-template-areas:
-        "form map"
-        "form map"
-        "form dropbox";
+        "map dropbox"
+        "map dropbox";
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
     justify-items: center;
+    align-items:flex-start;
     .BorderForm {
         grid-area: form;
         padding: 3em;
@@ -179,7 +179,7 @@ $companyColorG: #b0d470;
         grid-area: map;
         width: 500px;
         display: flex;
-        align-self: center;
+        align-self: start;
         flex-direction: column;
         .ContactDetailsTitle {
             margin-bottom: 2px;
@@ -195,6 +195,10 @@ $companyColorG: #b0d470;
         border: solid;
         border-color: rgba(71, 70, 70, 0.342);
         border-width: 1px;
+        h2{
+            text-align: center;
+            background: rgba(71, 70, 70, 0.164);
+        }
         #CitrixDropbox {
             display: flex;
             justify-content: center;

@@ -1,4 +1,4 @@
-//import { useState } from "react";
+import { useEffect } from "react";
 import contactImg from "../assets/ContactUs.jpg";
 import PhotoHeading from "../components/PhotoHeading";
 import GoogleMapReact from "../components/Maps";
@@ -62,75 +62,80 @@ function Contact() {
             message: '',
         }
     });
-
     return (
         <div className="PageStyles">
             <PhotoHeading src={contactImg} name="contact-image" />
             <div className="ContactPage">
-                <div className="BorderForm">
-                    <div className="FormDiv">
-                        <h1>Contact Us</h1>
-                        <p className="Paragraph">Have a question about real estate or your mortgage? Send us an email!</p>
-                        <form className="FormClass" onSubmit={handleSubmit}>
-                            <label>NAME</label><br />
-                            <input
-                                placeholder="Enter your name"
-                                name="fname"
-                                value={data["fname"] || ''}
-                                onChange={handleChange} />
-                            {errors.fname && <p className="error">{errors.fname}</p>}
-                            <label>EMAIL ADDRESS</label><br />
-                            <input
-                                placeholder="Enter your email"
-                                name="email"
-                                value={data["email"] || ''}
-                                onChange={handleChange} />
-                            {errors.email && <p className="error">{errors.email}</p>}
-                            <label>PHONE</label><br />
-                            <input
-                                placeholder="Enter your phone number"
-                                name="phone"
-                                value={data["phone"] || ''}
-                                onChange={handleChange} />
-                            {errors.phone && <p className="error">{errors.phone}</p>}
-                            <label>MESSAGE</label><br />
-                            <textarea rows="10" cols="49"
-                                placeholder="Hello..."
-                                name="message"
-                                value={data["message"] || ''}
-                                onChange={handleChange} />
-                            {errors.message && <p className="error">{errors.message}</p>}
-                            <button className="ContactButton EmailSubmit" type="submit">SUBMIT</button>
-                        </form>
-                    </div>
-                </div>
+                {/*<ContactUsForm data={data} errors={errors} handleChange={handleChange} handleSubmit={handleSubmit} />*/}
                 <div className="MoreInfo">
                     {/*<GoogleMapReact />*/}
-                    <iframe src={googleMapSrc} 
-                    style={{ border: "0" }} 
-                    allowfullscreen="" 
-                    loading="lazy"
-                    title="GoogleMaps"></iframe>
                     <p className="ContactDetailsTitle">OUR OFFICE</p>
                     <p className="Paragraph">
                         12437 Lewis Street, Suite 206<br />
-                        Garden Grove<br />
-                        CA 92840<br />
+                        Garden Grove, CA 92840
                     </p>
                     <p className="ContactDetailsTitle">CONTACT</p>
                     <p className="Paragraph">
                         info@nestegginc.net<br />
                         714.907.4381<br />
                     </p>
+                    <iframe src={googleMapSrc}
+                        style={{ border: "0" }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        title="GoogleMaps"></iframe>
                 </div>
                 <div className="DropBox" >
-                    <iframe src="https://nestegginc.sharefile.com/remoteupload/37ee990b-92e2-4e66-892e-e200b7ab6b7c"
-                        frameborder="0"
-                        width="600px"
-                        height="400px"
+                    <h2>Secure File Upload</h2>
+                    <iframe src="https://nestegginc.sharefile.com/remoteupload/f922de8d-0975-449d-bc3e-c5714bd7a1b8"
+                        frameBorder="0"
+                        width="550px"
+                        height="700px"
                         id="CitrixDropbox"
                         title="CitrixDropbox"></iframe>
                 </div>
+            </div>
+        </div>
+    );
+}
+
+function ContactUsForm({ data, errors, handleChange, handleSubmit }) {
+    return (
+        <div className="BorderForm">
+            <div className="FormDiv">
+                <h1>Contact Us</h1>
+                <p className="Paragraph">Have a question about real estate or your mortgage? Send us an email!</p>
+                <form className="FormClass" onSubmit={handleSubmit}>
+                    <label>NAME</label><br />
+                    <input
+                        placeholder="Enter your name"
+                        name="fname"
+                        value={data["fname"] || ''}
+                        onChange={handleChange} />
+                    {errors.fname && <p className="error">{errors.fname}</p>}
+                    <label>EMAIL ADDRESS</label><br />
+                    <input
+                        placeholder="Enter your email"
+                        name="email"
+                        value={data["email"] || ''}
+                        onChange={handleChange} />
+                    {errors.email && <p className="error">{errors.email}</p>}
+                    <label>PHONE</label><br />
+                    <input
+                        placeholder="Enter your phone number"
+                        name="phone"
+                        value={data["phone"] || ''}
+                        onChange={handleChange} />
+                    {errors.phone && <p className="error">{errors.phone}</p>}
+                    <label>MESSAGE</label><br />
+                    <textarea rows="10" cols="49"
+                        placeholder="Hello..."
+                        name="message"
+                        value={data["message"] || ''}
+                        onChange={handleChange} />
+                    {errors.message && <p className="error">{errors.message}</p>}
+                    <button className="ContactButton EmailSubmit" type="submit">SUBMIT</button>
+                </form>
             </div>
         </div>
     );
