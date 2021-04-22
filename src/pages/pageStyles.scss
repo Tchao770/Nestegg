@@ -130,7 +130,7 @@ $companyColorG: #b0d470;
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
     justify-items: center;
-    align-items:flex-start;
+    align-items: flex-start;
     .BorderForm {
         grid-area: form;
         padding: 3em;
@@ -195,7 +195,7 @@ $companyColorG: #b0d470;
         border: solid;
         border-color: rgba(71, 70, 70, 0.342);
         border-width: 1px;
-        h2{
+        h2 {
             text-align: center;
             background: rgba(71, 70, 70, 0.164);
         }
@@ -238,6 +238,18 @@ $companyColorG: #b0d470;
             text-align: center;
         }
     }
+    .AboutPage {
+        .Pictures {
+            flex-direction: column;
+            height: 700px;
+            .Profile {
+                margin-bottom: 1em;
+                img{
+                    width: 15em;
+                }
+            }
+        }
+    }
     .Quote {
         font-size: 25px;
     }
@@ -246,6 +258,7 @@ $companyColorG: #b0d470;
             "form"
             "map"
             "dropbox";
+        row-gap: 2em;
         grid-template-columns: 100%;
         justify-content: center;
         margin: auto;
@@ -257,10 +270,16 @@ $companyColorG: #b0d470;
             justify-self: center;
             text-align: center;
             margin-top: 2em;
+            #GoogleMaps {
+                margin: auto;
+                width: 350px;
+            }
         }
-        #CitrixDropbox {
-            width: 350px;
-            height: 750px;
+        .DropBox {
+            #CitrixDropbox {
+                width: 350px;
+                height: 750px;
+            }
         }
     }
 }

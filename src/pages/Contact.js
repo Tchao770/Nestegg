@@ -31,7 +31,7 @@ function Contact() {
                     message: 'Email field is required',
                 },
                 pattern: {
-                    value: '^[A-za-z0-9-_.]+@[A-za-z0-9-_.]+\.[A-za-z0-9-_.]+$',  // regular expression for emails
+                    value: 'help',// '^[A-za-z0-9-_.]+@[A-za-z0-9-_.]+\.[A-za-z0-9-_.]+$',  // regular expression for emails
                     message:
                         "Please enter a valid email",
                 },
@@ -83,13 +83,14 @@ function Contact() {
                         style={{ border: "0" }}
                         allowFullScreen=""
                         loading="lazy"
+                        id="GoogleMaps"
                         title="GoogleMaps"></iframe>
                 </div>
                 <div className="DropBox" >
                     <h2>Secure File Upload</h2>
                     <iframe src="https://nestegginc.sharefile.com/remoteupload/f922de8d-0975-449d-bc3e-c5714bd7a1b8"
                         frameBorder="0"
-                        width="550px"
+                        width="500px"
                         height="700px"
                         id="CitrixDropbox"
                         title="CitrixDropbox"></iframe>
