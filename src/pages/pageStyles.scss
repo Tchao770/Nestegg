@@ -12,18 +12,15 @@ $companyColorG: #b0d470;
     width: 70%;
     margin: auto;
     .AboutSection {
-        display: grid;
+        display: flex;
         justify-content: center;
         align-items: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "left right";
-        margin-bottom: 5em;
-        article {
-            margin-left: 1em;
-            justify-self: right;
+        margin: 3em 0em;
+        i{
+            font-size: 25px;
         }
-        img {
-            justify-self: center;
+        span{
+            text-align: center;
         }
     }
     a {
@@ -229,6 +226,9 @@ $companyColorG: #b0d470;
                     margin-top: 1em;
                     margin-bottom: 2em;
                 }
+            }
+            i{
+                font-size: 25px;
             }
         }
     }
