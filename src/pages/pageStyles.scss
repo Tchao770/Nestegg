@@ -14,29 +14,27 @@ $companyColorG: #b0d470;
     .AboutSection {
         display: grid;
         row-gap: 1em;
-        .QuoteLeft{
+        .QuoteLeft {
             display: grid;
-            grid-template-areas: 
-            "quote descr";
+            grid-template-areas: "quote descr";
             grid-template-columns: 30% 70%;
-            h3{
+            h3 {
                 padding: 0 1em;
                 grid-area: quote;
             }
-            p{
+            span {
                 grid-area: descr;
                 align-self: center;
             }
         }
-        .QuoteRight{
+        .QuoteRight {
             display: grid;
-            grid-template-areas: 
-            "descr quote";
+            grid-template-areas: "descr quote";
             grid-template-columns: 70% 30%;
-            h3{
+            h3 {
                 grid-area: quote;
             }
-            p{
+            p {
                 grid-area: descr;
             }
         }
@@ -53,7 +51,7 @@ $companyColorG: #b0d470;
     h2 {
         text-align: center;
     }
-    p{
+    p {
         font-size: 20px;
         margin-bottom: 2em;
     }
@@ -233,21 +231,36 @@ $companyColorG: #b0d470;
         display: flex;
         flex-direction: column;
         padding-bottom: 5em;
+        display: grid;
+        row-gap: 1em;
         .AboutSection {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            span{
-                text-align: left;
-                i{
+            .QuoteLeft {
+                display: grid;
+                grid-template-areas: 
+                "quote"
+                "descr";
+                grid-template-columns: 100%;
+                h3 {
+                    grid-area: quote;
+                    text-align: center;
+                    justify-self: center;
+                    padding: 0;
                     font-size: 20px;
+                }
+                span {
+                    grid-area: descr;
+                    justify-self: center;
+                    font-size: 15px;
                 }
             }
         }
     }
-    .MortgagePage{
+    .Quote {
         width: 90%;
-        .Calculator{
+    }
+    .MortgagePage {
+        width: 90%;
+        .Calculator {
             width: 340px;
         }
     }
@@ -263,7 +276,7 @@ $companyColorG: #b0d470;
             height: 700px;
             .Profile {
                 margin-bottom: 1em;
-                img{
+                img {
                     width: 15em;
                 }
             }

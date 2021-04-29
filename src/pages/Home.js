@@ -12,23 +12,23 @@ function Home({ match }) {
 					<section className="AboutSection">
 						<div className="QuoteLeft">
 						<h3><i>Home is more than just where you live.</i></h3>
-						<p>
+						<span>
 							Home can be a place to thrive, grow and build a lifetime investment. We work to make our clients’ best version of home a reality.
-						</p>
+						</span>
 						</div>
 						<hr />
 						<div className="QuoteLeft">
 						<h3><i>Expert advice at every step.</i></h3>
-						<p>
+						<span>
 							Homeownership can be a maze of confusing terminology, processes and requirements that can intimidate even seasoned investors. We untangle the mess and help you make a plan based on your goals.
-						</p>
+						</span>
 						</div>
 						<hr />
 						<div className="QuoteLeft">
 						<h3><i>Everything is right here.</i></h3>
-						<p>
+						<span>
 							We handle real estate financing and real estate sales in-house. You don’t have to use both services, but when you do, you have a single point of contact handling everything in your transaction. Either way, you always get personalized service and peace of mind.
-						</p>
+						</span>
 						</div>
 					</section>
 				</div>
