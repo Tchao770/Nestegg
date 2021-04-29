@@ -12,19 +12,34 @@ $companyColorG: #b0d470;
     width: 70%;
     margin: auto;
     .AboutSection {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 3em 0em;
-        i{
-            font-size: 25px;
+        display: grid;
+        row-gap: 1em;
+        .QuoteLeft{
+            display: grid;
+            grid-template-areas: 
+            "quote descr";
+            grid-template-columns: 30% 70%;
+            h3{
+                padding: 0 1em;
+                grid-area: quote;
+            }
+            p{
+                grid-area: descr;
+                align-self: center;
+            }
         }
-        span{
-            text-align: center;
+        .QuoteRight{
+            display: grid;
+            grid-template-areas: 
+            "descr quote";
+            grid-template-columns: 70% 30%;
+            h3{
+                grid-area: quote;
+            }
+            p{
+                grid-area: descr;
+            }
         }
-    }
-    a {
-        text-decoration: none;
     }
 }
 
@@ -37,6 +52,10 @@ $companyColorG: #b0d470;
     margin: auto;
     h2 {
         text-align: center;
+    }
+    p{
+        font-size: 20px;
+        margin-bottom: 2em;
     }
     .Calculator {
         width: 100%;
@@ -210,6 +229,7 @@ $companyColorG: #b0d470;
 // Smaller screens
 @media screen and (max-width: 1300px) {
     .HomePage {
+        width: 90%;
         display: flex;
         flex-direction: column;
         padding-bottom: 5em;
@@ -217,19 +237,18 @@ $companyColorG: #b0d470;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .ContactButton {
-                    margin-top: 1em;
-                    margin-bottom: 2em;
+            span{
+                text-align: left;
+                i{
+                    font-size: 20px;
                 }
             }
-            i{
-                font-size: 25px;
-            }
+        }
+    }
+    .MortgagePage{
+        width: 90%;
+        .Calculator{
+            width: 340px;
         }
     }
     .RealEstatePage {

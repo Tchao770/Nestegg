@@ -2,9 +2,10 @@ import PhotoHeading from "../components/PhotoHeading";
 import mortgageImg from "../assets/Mortgagecentered.jpg";
 
 function MortgageCalculator() {
+    let size = 1;   // 1 for fullscreen, 5 for mobile
     return (
         <div className="Calculator">
-            <iframe src="https://www.mortgagecalculator.net/embeddable/v2/?size=1&textColor=000000&backgroundColor=ffffff"
+            <iframe src={`https://www.mortgagecalculator.net/embeddable/v2/?size=${size}&textColor=000000&backgroundColor=ffffff`}
                 style={{ width: "100%", frameborder: "0", scrolling: "no", height: "330px" }} />
             <a target="_blank" href="https://www.mortgagecalculator.net">
                 Powered By www.MortgageCalculator.net
@@ -12,13 +13,19 @@ function MortgageCalculator() {
         </div>
     );
 }
-
 function Mortgage() {
     return (
         <div className="PageStyles">
             <PhotoHeading src={mortgageImg} name="mortgage-image" />
             <div className="MortgagePage">
-                <h2 className="Quote">Use this mortgage calculator to get an idea!</h2>
+                <h2 className="Quote">There’s more to a mortgage broker than just great rates.</h2>
+                <section>
+                    <p>We believe that customer service and communication matter. Whether you’re an existing homeowner refinancing to get a lower payment or you’re a first time buyer, we keep you in the loop.</p>
+                    <br />
+                    <p>We go above and beyond. Working for you isn’t only about making sure that mortgage transactions happen smoothly. We also strive to educate and inform our clients – so that you can make the best decision based on the best available information.</p>
+                    <br />
+                    <p>Talk to us about getting a mortgage or use the calculator below to estimate your own savings!</p>
+                </section>
                 <MortgageCalculator />
             </div>
         </div >
