@@ -239,7 +239,8 @@ $companyColorG: #b0d470;
                 grid-template-areas: 
                 "quote"
                 "descr";
-                grid-template-columns: 100%;
+                grid-template-columns: 90%;
+                justify-content: center;
                 h3 {
                     grid-area: quote;
                     text-align: center;
