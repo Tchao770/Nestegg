@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Nestegg/static/css/main.c397fb93.chunk.css",
-    "main.js": "/Nestegg/static/js/main.5c248cb4.chunk.js",
-    "main.js.map": "/Nestegg/static/js/main.5c248cb4.chunk.js.map",
+    "main.css": "/Nestegg/static/css/main.159f2269.chunk.css",
+    "main.js": "/Nestegg/static/js/main.680d12cb.chunk.js",
+    "main.js.map": "/Nestegg/static/js/main.680d12cb.chunk.js.map",
     "runtime-main.js": "/Nestegg/static/js/runtime-main.7a207dac.js",
     "runtime-main.js.map": "/Nestegg/static/js/runtime-main.7a207dac.js.map",
-    "static/js/2.61f9fb2c.chunk.js": "/Nestegg/static/js/2.61f9fb2c.chunk.js",
-    "static/js/2.61f9fb2c.chunk.js.map": "/Nestegg/static/js/2.61f9fb2c.chunk.js.map",
+    "static/js/2.66a97c0f.chunk.js": "/Nestegg/static/js/2.66a97c0f.chunk.js",
+    "static/js/2.66a97c0f.chunk.js.map": "/Nestegg/static/js/2.66a97c0f.chunk.js.map",
     "index.html": "/Nestegg/index.html",
-    "static/css/main.c397fb93.chunk.css.map": "/Nestegg/static/css/main.c397fb93.chunk.css.map",
-    "static/js/2.61f9fb2c.chunk.js.LICENSE.txt": "/Nestegg/static/js/2.61f9fb2c.chunk.js.LICENSE.txt",
+    "static/css/main.159f2269.chunk.css.map": "/Nestegg/static/css/main.159f2269.chunk.css.map",
+    "static/js/2.66a97c0f.chunk.js.LICENSE.txt": "/Nestegg/static/js/2.66a97c0f.chunk.js.LICENSE.txt",
     "static/media/About.b163ed1e.jpg": "/Nestegg/static/media/About.b163ed1e.jpg",
     "static/media/ContactUs.b14c64b6.jpg": "/Nestegg/static/media/ContactUs.b14c64b6.jpg",
     "static/media/Homepagecentered.c8c769af.jpg": "/Nestegg/static/media/Homepagecentered.c8c769af.jpg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7a207dac.js",
-    "static/js/2.61f9fb2c.chunk.js",
-    "static/css/main.c397fb93.chunk.css",
-    "static/js/main.5c248cb4.chunk.js"
+    "static/js/2.66a97c0f.chunk.js",
+    "static/css/main.159f2269.chunk.css",
+    "static/js/main.680d12cb.chunk.js"
   ]
 }
