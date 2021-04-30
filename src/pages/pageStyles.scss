@@ -57,7 +57,9 @@ $companyColorG: #b0d470;
     }
     .Calculator {
         width: 100%;
-        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: auto;
         a {
             width: 100%;
             background: #007bbe;
@@ -262,7 +264,10 @@ $companyColorG: #b0d470;
     .MortgagePage {
         width: 90%;
         .Calculator {
-            width: 340px;
+            justify-content: center;
+            a{
+               margin-top: -35px; 
+            }
         }
     }
     .RealEstatePage {

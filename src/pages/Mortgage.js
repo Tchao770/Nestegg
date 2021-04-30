@@ -1,18 +1,20 @@
 import PhotoHeading from "../components/PhotoHeading";
 import mortgageImg from "../assets/Mortgagecentered.jpg";
+import useWindowSize from "../hooks/UseWindowSize";
+
 
 function MortgageCalculator() {
-    let size = 1;   // 1 for fullscreen, 5 for mobile
+    const currentWindow = useWindowSize();
     return (
         <div className="Calculator">
-            <iframe src={`https://www.mortgagecalculator.net/embeddable/v2/?size=${size}&textColor=000000&backgroundColor=ffffff`}
-                style={{ width: "100%", frameborder: "0", scrolling: "no", height: "330px" }} />
-            <a target="_blank" href="https://www.mortgagecalculator.net">
-                Powered By www.MortgageCalculator.net
-            </a>
+            <iframe src={`https://www.mortgagecalculator.net/embeddable/v2/?size=${currentWindow.size}&textColor=000000&backgroundColor=ffffff`}
+                style={{
+                    width: currentWindow.width, frameborder: "0", scrolling: "no", height: "330px"
+                }} />
         </div>
     );
 }
+
 function Mortgage() {
     return (
         <div className="PageStyles">
