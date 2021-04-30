@@ -8,7 +8,7 @@ $companyColorG: #b0d470;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    margin: 20px 30px 20px 30px;
+    margin: 20px 30px;
 }
 .Link-List {
     width: 60em;
@@ -62,6 +62,7 @@ $companyColorG: #b0d470;
 .OverFlowHandler {
     overflow: hidden;
     height: 500px;
+    user-select: none;
     .PageImg {
         width: 100%;
         height: 100%;
@@ -160,6 +161,15 @@ $companyColorG: #b0d470;
         a:not(:first-child) {
             display: none;
         }
+        .Link-List {
+            .Link {
+                display: none;
+                visibility: hidden;
+                max-height: 0px;
+                opacity: 0;
+                transition: max-height 0.6s ease;
+            }
+        }
     }
     // Make hamburger appear
     .Nav-Mobile-Header {
@@ -168,41 +178,35 @@ $companyColorG: #b0d470;
     }
     // New class for navbar
     .NavBarResponsive {
-        margin-bottom: 1em;
+        position: relative;
+        margin: 20px 30px;
         .Nav-Mobile-Header {
             position: absolute;
-            right: 20px;
-            top: 20px;
+            right: 0;
+            top: 13px;
         }
         .Link-List {
             width: 100%;
+
+            z-index: 1000;
+            position: absolute;
+            display: block;
+            background: rgb(255, 255, 255);
             .Link {
                 display: block;
-                text-align: center;
+                visibility: visible;
+                height: auto;
                 padding: 12px 16px;
-                margin: auto;
+                text-decoration: none;
+                color: black;
+                opacity: 1;
+                transition: max-height 0.7s, opacity 3s, visibility 4s ease;
             }
             .Link:hover {
                 width: inherit;
                 background: $companyColorG;
                 transition-duration: 0.5s;
             }
-        }
-        .Link {
-            display: block;
-            text-align: center;
-            margin: auto;
-            text-decoration: none;
-        }
-    }
-    .Link-List {
-        width: 20em;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        margin: auto;
-        .Link {
-            display: none;
         }
     }
     .OverFlowHandler {

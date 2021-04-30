@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logonav.png";
 import { IconContext } from "react-icons";
 import { HiMenu } from "react-icons/hi"
@@ -16,13 +16,11 @@ function NavMenu() {
 
 function myFunction() {
     var x = document.getElementById("NavBar-id");
-    var y = document.getElementsByClassName("Links");
     if (x.className === "NavBar") {
         x.className += `Responsive`;
     } else {
         x.className = "NavBar";
     }
-    console.log(y);
 }
 
 // Collapse the view on click
@@ -66,11 +64,13 @@ function HeaderComponent() {
                         onClick={() => mobileView("About")}>
                         ABOUT
                     </NavLink>
+                    <NavLink to="/Nestegg/contact"
+                        id="Contact"
+                        className="Link"
+                        onClick={() => mobileView("Contact")}>
+                        <button className="ContactButton" onClick={() => mobileView("Contact")}>CONTACT US</button>
+                    </NavLink>
                 </div>
-                <NavLink to="/Nestegg/contact" id="Contact" className="Link">
-                    <button className="ContactButton" onClick={() => mobileView("Contact")}>CONTACT US</button>
-                </NavLink>
-
                 <NavMenu />
             </nav>
         </header>

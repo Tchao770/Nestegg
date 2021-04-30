@@ -8,6 +8,7 @@ function MortgageCalculator() {
     return (
         <div className="Calculator">
             <iframe src={`https://www.mortgagecalculator.net/embeddable/v2/?size=${currentWindow.size}&textColor=000000&backgroundColor=ffffff`}
+                title="Mortgage-Calculator"
                 style={{
                     width: currentWindow.width, frameborder: "0", scrolling: "no", height: "330px"
                 }} />

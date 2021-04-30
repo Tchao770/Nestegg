@@ -1,9 +1,5 @@
 import { useState } from "react";
 
-function formatPhoneNumber(value) {
-    
-}
-
 // https://felixgerschau.com/react-hooks-form-validation-typescript/
 export function useForm(options) {
     const [data, setData] = useState(options?.initialValues || {});

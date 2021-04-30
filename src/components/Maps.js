@@ -32,8 +32,8 @@ const location = {
 const GoogleMap = () => {
     const defaultMap = useRef({
         center: {
-            lat: 33.782093,
-            lng: -117.897859
+            lat: location.lat,
+            lng: location.lng
         },
         zoom: 17
     });
