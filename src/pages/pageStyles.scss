@@ -4,7 +4,8 @@ $companyColorG: #b0d470;
 .PageStyles {
     .PageImg {
         // Adds gradient to bottom of page pictures
-        mask-image: linear-gradient(to top, transparent 0%, white 100%);
+        //mask-image: linear-gradient(to top, transparent 0%, white 100%);
+        //box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
     }
 }
 
@@ -48,9 +49,6 @@ $companyColorG: #b0d470;
     justify-content: center;
     flex-direction: column;
     margin: auto;
-    h2 {
-        text-align: center;
-    }
     p {
         font-size: 20px;
         margin-bottom: 2em;
@@ -83,15 +81,14 @@ $companyColorG: #b0d470;
 .RealEstatePage {
     width: 70%;
     margin: auto;
-    .Heading {
-        font-size: 30px;
-        text-align: center;
-        font-weight: bold;
+    p {
+        font-size: 20px;
+        margin-bottom: 2em;
     }
 }
 .Quote {
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 1em;
     margin-bottom: 1em;
