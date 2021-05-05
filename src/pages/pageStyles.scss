@@ -26,6 +26,7 @@ $companyColorG: #b0d470;
             span {
                 grid-area: descr;
                 align-self: center;
+                font-size: 20px;
             }
         }
         .QuoteRight {
@@ -81,9 +82,19 @@ $companyColorG: #b0d470;
 .RealEstatePage {
     width: 70%;
     margin: auto;
-    p {
-        font-size: 20px;
-        margin-bottom: 2em;
+    .QuoteLeft {
+        display: grid;
+        grid-template-areas: "quote descr";
+        grid-template-columns: 30% 70%;
+        h3 {
+            padding: 0 1em;
+            grid-area: quote;
+        }
+        span {
+            grid-area: descr;
+            align-self: center;
+            font-size: 20px;
+        }
     }
 }
 .Quote {
@@ -260,6 +271,9 @@ $companyColorG: #b0d470;
     }
     .MortgagePage {
         width: 90%;
+        p{
+            font-size: 15px;
+        }
         .Calculator {
             justify-content: center;
             a{
@@ -271,6 +285,26 @@ $companyColorG: #b0d470;
         .Heading {
             font-size: 20px;
             text-align: center;
+        }
+        .QuoteLeft {
+            display: grid;
+            grid-template-areas: 
+            "quote"
+            "descr";
+            grid-template-columns: 90%;
+            justify-content: center;
+            h3 {
+                grid-area: quote;
+                text-align: center;
+                justify-self: center;
+                padding: 0;
+                font-size: 20px;
+            }
+            span {
+                grid-area: descr;
+                justify-self: center;
+                font-size: 15px;
+            }
         }
     }
     .AboutPage {
