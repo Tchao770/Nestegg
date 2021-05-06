@@ -8,7 +8,7 @@ $companyColorG: #b0d470;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    margin: 20px 30px;
+    padding: 20px 30px;
 }
 .Link-List {
     width: 60em;
@@ -163,13 +163,10 @@ $companyColorG: #b0d470;
             display: none;
         }
         .Link-List {
-            height: auto;
-            .Link {
-                display: none;
-                visibility: hidden;
-                max-height: 0px;
+            display: block;
+            transform: scale(1, 0);
+            .Link{
                 opacity: 0;
-                transition: max-height 0.6s ease;
             }
         }
     }
@@ -181,33 +178,36 @@ $companyColorG: #b0d470;
     // New class for navbar
     .NavBarResponsive {
         position: relative;
-        margin: 20px 30px;
+        padding: 20px 30px;
         .Nav-Mobile-Header {
             position: absolute;
-            right: 0;
-            top: 13px;
+            right: 30px;
+            top: 33px;
         }
         .Link-List {
             width: 100%;
-
             z-index: 1000;
             position: absolute;
+            padding-top: 1em;
+            left: 0;
             display: block;
             background: rgb(255, 255, 255);
+            transform: scale(1, 1);
+            transform-origin: top;
+            transition: transform 400ms ease-in-out;
             .Link {
                 display: block;
-                visibility: visible;
                 height: auto;
                 padding: 12px 16px;
                 text-decoration: none;
                 color: black;
                 opacity: 1;
-                transition: max-height 0.7s, opacity 3s, visibility 4s ease;
             }
             .Link:hover {
                 width: inherit;
                 background: $companyColorG;
                 transition-duration: 0.5s;
+                
             }
         }
     }
