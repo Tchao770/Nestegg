@@ -19,7 +19,7 @@ function RealEstate() {
             <PhotoHeading src={realestateImg} name="real-estate-image" />
             <h2 className="Quote">Your home is your most valuable asset. Whether you’re a first time buyer or a seasoned investor, we work to realize your goals of homeownership.</h2>
             <div className="RealEstatePage">
-                <div className="Content">
+                <section className="Content">
                     <div className="QuoteLeft">
                         <h3><i>Finding your own little slice of California living doesn’t have to be daunting.</i></h3>
                         <span>
@@ -33,12 +33,12 @@ function RealEstate() {
                             We work with you to tailor a strategy that maximizes your net return and suits your needs. You’ll always be well-informed and aware of every step of the process. Your best interest is always our top priority not just in selling your home for the best price but also taking necessary steps to minimize liability and diligently work with buyers toward a smooth and successful sale.
 						</span>
                     </div>
-                </div>
+                </section>
 
                 <Link to="/Nestegg/contact" className="EstateContactLink">
-                    <button className="ContactButton">TALK TO US!</button>
+                    <button className="ContactButton" onClick={() => window.scrollTo(0, 0) }>TALK TO US!</button>
                 </Link>
-            </div>
+        </div>
         </div >
     )
 }

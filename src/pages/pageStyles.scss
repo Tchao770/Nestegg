@@ -242,13 +242,13 @@ $companyColorG: #b0d470;
         flex-direction: column;
         padding-bottom: 5em;
         display: grid;
-        row-gap: 1em;
         .AboutSection {
+            row-gap: 1em;
             .QuoteLeft {
                 display: grid;
-                grid-template-areas: 
-                "quote"
-                "descr";
+                grid-template-areas:
+                    "quote"
+                    "descr";
                 grid-template-columns: 90%;
                 justify-content: center;
                 h3 {
@@ -271,13 +271,13 @@ $companyColorG: #b0d470;
     }
     .MortgagePage {
         width: 90%;
-        p{
+        p {
             font-size: 15px;
         }
         .Calculator {
             justify-content: center;
-            a{
-               margin-top: -35px; 
+            a {
+                margin-top: -35px;
             }
         }
     }
@@ -286,24 +286,27 @@ $companyColorG: #b0d470;
             font-size: 20px;
             text-align: center;
         }
-        .QuoteLeft {
-            display: grid;
-            grid-template-areas: 
-            "quote"
-            "descr";
-            grid-template-columns: 90%;
-            justify-content: center;
-            h3 {
-                grid-area: quote;
-                text-align: center;
-                justify-self: center;
-                padding: 0;
-                font-size: 20px;
-            }
-            span {
-                grid-area: descr;
-                justify-self: center;
-                font-size: 15px;
+        .Content {
+            .QuoteLeft {
+                display: grid;
+                grid-template-areas:
+                    "quote"
+                    "descr";
+                grid-template-columns: 90%;
+                justify-content: center;
+                margin: 2em 0;
+                h3 {
+                    grid-area: quote;
+                    text-align: center;
+                    justify-self: center;
+                    padding: 0;
+                    font-size: 20px;
+                }
+                span {
+                    grid-area: descr;
+                    justify-self: center;
+                    font-size: 15px;
+                }
             }
         }
     }

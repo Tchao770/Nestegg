@@ -58,12 +58,12 @@ function HeaderComponent() {
                         onClick={() => mobileView("RealEstate")}>
                         REAL ESTATE
                     </NavLink>
-                    <NavLink to="/Nestegg/about"
+                    {/* <NavLink to="/Nestegg/about"
                         activeClassName="active"
                         className="Link"
                         onClick={() => mobileView("About")}>
                         ABOUT
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink to="/Nestegg/contact"
                         id="Contact"
                         className="Link"
