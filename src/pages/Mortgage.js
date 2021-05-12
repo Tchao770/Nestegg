@@ -1,6 +1,6 @@
 import PhotoHeading from "../components/PhotoHeading";
 import mortgageImg from "../assets/Mortgagecentered.jpg";
-import useWindowSize from "../hooks/UseWindowSize.js";
+import useWindowSize from "../../hooks/UseWindowSize.js";
 
 
 function MortgageCalculator() {
