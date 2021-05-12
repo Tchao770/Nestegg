@@ -1,0 +1,113 @@
+.NavBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 20px 30px;
+}
+.Link-List {
+    width: 60em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .Link {
+        position: relative;
+        text-decoration: none;
+        color: black;
+    }
+    .Link.active:before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $companyColorB;
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    .Link:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $companyColorB;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
+    .Link:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+}
+
+.Nav-Home {
+    padding-top: 5px;
+    width: 167px;
+}
+
+.Nav-Mobile-Header {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+// Smaller screens
+@media screen and (max-width: 1300px) {
+    // Removes link buttons from header
+    .NavBar {
+        a:not(:first-child) {
+            display: none;
+        }
+        .Link-List {
+            display: block;
+            transform: scale(1, 0);
+            .Link {
+                opacity: 0;
+            }
+        }
+        .Nav-Mobile-Header {
+            position: relative;
+            display: inline-block;
+        }
+    }
+    // Make hamburger appear
+    // New class for navbar
+    .NavBarResponsive {
+        position: relative;
+        padding: 20px 30px;
+        .Nav-Mobile-Header {
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 33px;
+        }
+        .Link-List {
+            width: 100%;
+            z-index: 1000;
+            position: absolute;
+            padding-top: 1em;
+            left: 0;
+            display: block;
+            background: rgb(255, 255, 255);
+            transform: scale(1, 1);
+            transform-origin: top;
+            transition: transform 400ms ease-in-out;
+            .Link {
+                display: block;
+                height: auto;
+                padding: 12px 16px;
+                text-decoration: none;
+                color: black;
+                opacity: 1;
+            }
+            .Link:hover {
+                width: inherit;
+                background: $companyColorG;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+}

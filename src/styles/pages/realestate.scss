@@ -1,0 +1,66 @@
+.RealEstatePage {
+    width: 70%;
+    margin: auto;
+    .Content {
+        display: grid;
+        row-gap: 2em;
+        hr {
+            width: 100%;
+        }
+        .QuoteLeft {
+            display: grid;
+            grid-template-areas: "quote descr";
+            grid-template-columns: 30% 70%;
+            h3 {
+                padding: 0 1em;
+                grid-area: quote;
+            }
+            span {
+                grid-area: descr;
+                align-self: center;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .EstateContactLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4em;
+        width: 134px;
+        margin: auto;
+        text-decoration: none;
+    }
+}
+// Smaller screen
+@media screen and (max-width: $smallerScreen) {
+    .RealEstatePage {
+        .Content {
+            .QuoteLeft {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 2em 0;
+                h3 {
+                    grid-area: quote;
+                    text-align: center;
+                    justify-self: center;
+                    padding: 0;
+                    font-size: 20px;
+                }
+                span {
+                    grid-area: descr;
+                    justify-self: center;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+// Big monitors
+@media screen and (min-width: 1400px) {
+    .RealEstatePage {
+        width: 50%;
+    }
+}

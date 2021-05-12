@@ -2,7 +2,6 @@ import PhotoHeading from "../components/PhotoHeading";
 import realestateImg from "../assets/realestate.jpg";
 import ArticleDiv from "../components/ArticleDiv";
 import { Link } from "react-router-dom";
-import "./pageStyles.scss";
 
 const buyParagraph =
     `Finding your own little slice of California living doesn’t have to be daunting. We provide expert guidance to avoid getting stuck in a maze of endless home searches and bidding matches. Navigating the most competitive market in real estate is easier with consistent, personalized service from the beginning to the close of escrow and beyond.`;
@@ -35,7 +34,7 @@ function RealEstate() {
                     </div>
                 </section>
 
-                <Link to="/Nestegg/contact" className="EstateContactLink">
+                <Link to="/contact" className="EstateContactLink">
                     <button className="ContactButton" onClick={() => window.scrollTo(0, 0) }>TALK TO US!</button>
                 </Link>
         </div>

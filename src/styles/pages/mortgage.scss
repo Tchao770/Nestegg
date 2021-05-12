@@ -1,0 +1,50 @@
+.MortgagePage {
+    margin-top: 1em;
+    width: 960px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    p {
+        font-size: 20px;
+        margin-bottom: 2em;
+    }
+    .Calculator {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        a {
+            width: 100%;
+            background: #007bbe;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            display: block;
+            clear: both;
+            padding: 3px 0;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-family: arial;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: -32px;
+            position: absolute;
+        }
+    }
+}
+// Smaller screen
+@media screen and (max-width: $smallerScreen) {
+    .MortgagePage {
+        width: 90%;
+        p {
+            font-size: 15px;
+        }
+        .Calculator {
+            justify-content: center;
+            a {
+                margin-top: -35px;
+            }
+        }
+    }
+}

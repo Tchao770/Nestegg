@@ -1,8 +1,7 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logonav.png";
 import { IconContext } from "react-icons";
-import { HiMenu } from "react-icons/hi"
-import "./componentStyles.scss";
+import { HiMenu } from "react-icons/hi";
 
 function NavMenu() {
     return (
@@ -35,36 +34,36 @@ function HeaderComponent() {
     return (
         <header >
             <nav className="NavBar" id="NavBar-id">
-                <NavLink to="/Nestegg/">
+                <NavLink to="/">
                     <img src={logo} className="Nav-Home" alt="nav-logo" />
                 </NavLink>
                 <div className="Link-List">
                     <NavLink
-                        exact to="/Nestegg/"
+                        exact to="/"
                         activeClassName="active"
                         className="Link"
                         onClick={() => mobileView("Home")}>
                         HOME
                     </NavLink>
-                    <NavLink to="/Nestegg/mortgage"
+                    <NavLink to="/mortgage"
                         activeClassName="active"
                         className="Link"
                         onClick={() => mobileView("Mortgage")}>
                         MORTGAGE
                     </NavLink>
-                    <NavLink to="/Nestegg/realestate"
+                    <NavLink to="/realestate"
                         activeClassName="active"
                         className="Link"
                         onClick={() => mobileView("RealEstate")}>
                         REAL ESTATE
                     </NavLink>
-                    {/* <NavLink to="/Nestegg/about"
+                    {/* <NavLink to="/about"
                         activeClassName="active"
                         className="Link"
                         onClick={() => mobileView("About")}>
                         ABOUT
                     </NavLink> */}
-                    <NavLink to="/Nestegg/contact"
+                    <NavLink to="/contact"
                         id="Contact"
                         className="Link"
                         onClick={() => mobileView("Contact")}>

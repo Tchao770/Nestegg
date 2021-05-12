@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import './App.scss';
+import './styles/index.scss';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Mortgage from "./pages/Mortgage";
@@ -11,14 +11,14 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Header />
         <Switch>
-          <Route exact path="/Nestegg/" component={Home} />
-          <Route path="/Nestegg/mortgage" component={Mortgage} />
-          <Route path="/Nestegg/realestate" component={RealEstate} />
-          <Route path="/Nestegg/about" component={About} />
-          <Route path="/Nestegg/contact" component={Contact} />
+          <Route exact path="/" component={Home} />
+          <Route path="/mortgage" component={Mortgage} />
+          <Route path="/realestate" component={RealEstate} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </Router>
       <Footer />

@@ -1,0 +1,15 @@
+@import "../utilities/variables";
+
+
+.ContactButton {
+    background: $companyColorB;
+    color: white;
+    border: none;
+    width: 145px;
+    padding: 10px 20px 10px 20px;
+}
+
+.ContactButton:hover {
+    background: $companyColorG;
+    transition-duration: 0.5s;
+}

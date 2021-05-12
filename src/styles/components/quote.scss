@@ -1,0 +1,21 @@
+.Quote {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 30px;
+}
+// Smaller screen
+@media screen and (max-width: $smallerScreen){
+    .Quote {
+        width: 90%;
+        font-size: 25px;
+    }
+}
+// Big monitors
+@media screen and (min-width: 1400px) {
+    .Quote {
+        width: 70%;
+    }
+}

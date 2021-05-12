@@ -1,0 +1,26 @@
+.OverFlowHandler {
+    overflow: hidden;
+    height: 500px;
+    user-select: none;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    .PageImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        --MozUserSelect: none;
+        --WebkitUserSelect: none;
+        --ms-user-select: none;
+    }
+}
+// Smaller screens
+@media screen and (max-width: 1300px) {
+    .OverFlowHandler {
+        height: 250px;
+    }
+    .ArticleDiv {
+        margin-right: 0;
+        .Heading {
+            text-align: center;
+        }
+    }
+}
