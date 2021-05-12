@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "https://tchao770.github.io/Nestegg/static/css/main.3ab15cf7.chunk.css",
-    "main.js": "https://tchao770.github.io/Nestegg/static/js/main.e848a9c0.chunk.js",
-    "main.js.map": "https://tchao770.github.io/Nestegg/static/js/main.e848a9c0.chunk.js.map",
-    "runtime-main.js": "https://tchao770.github.io/Nestegg/static/js/runtime-main.df779aae.js",
-    "runtime-main.js.map": "https://tchao770.github.io/Nestegg/static/js/runtime-main.df779aae.js.map",
-    "static/js/2.28bbd134.chunk.js": "https://tchao770.github.io/Nestegg/static/js/2.28bbd134.chunk.js",
-    "static/js/2.28bbd134.chunk.js.map": "https://tchao770.github.io/Nestegg/static/js/2.28bbd134.chunk.js.map",
-    "index.html": "https://tchao770.github.io/Nestegg/index.html",
-    "static/css/main.3ab15cf7.chunk.css.map": "https://tchao770.github.io/Nestegg/static/css/main.3ab15cf7.chunk.css.map",
-    "static/js/2.28bbd134.chunk.js.LICENSE.txt": "https://tchao770.github.io/Nestegg/static/js/2.28bbd134.chunk.js.LICENSE.txt",
-    "static/media/About.b163ed1e.jpg": "https://tchao770.github.io/Nestegg/static/media/About.b163ed1e.jpg",
-    "static/media/ContactUs.b14c64b6.jpg": "https://tchao770.github.io/Nestegg/static/media/ContactUs.b14c64b6.jpg",
-    "static/media/Homepagecentered.c8c769af.jpg": "https://tchao770.github.io/Nestegg/static/media/Homepagecentered.c8c769af.jpg",
-    "static/media/Mortgagecentered.7df79327.jpg": "https://tchao770.github.io/Nestegg/static/media/Mortgagecentered.7df79327.jpg",
-    "static/media/lenderLogo.a940bd48.png": "https://tchao770.github.io/Nestegg/static/media/lenderLogo.a940bd48.png",
-    "static/media/logofoot.f77ed0de.png": "https://tchao770.github.io/Nestegg/static/media/logofoot.f77ed0de.png",
-    "static/media/logonav.a4fad6da.png": "https://tchao770.github.io/Nestegg/static/media/logonav.a4fad6da.png",
-    "static/media/realestate.c53c2cc9.jpg": "https://tchao770.github.io/Nestegg/static/media/realestate.c53c2cc9.jpg"
+    "main.css": "http://emmanuelr1.sg-host.com/static/css/main.3ab15cf7.chunk.css",
+    "main.js": "http://emmanuelr1.sg-host.com/static/js/main.9aa02b0e.chunk.js",
+    "main.js.map": "http://emmanuelr1.sg-host.com/static/js/main.9aa02b0e.chunk.js.map",
+    "runtime-main.js": "http://emmanuelr1.sg-host.com/static/js/runtime-main.82e9198a.js",
+    "runtime-main.js.map": "http://emmanuelr1.sg-host.com/static/js/runtime-main.82e9198a.js.map",
+    "static/js/2.28bbd134.chunk.js": "http://emmanuelr1.sg-host.com/static/js/2.28bbd134.chunk.js",
+    "static/js/2.28bbd134.chunk.js.map": "http://emmanuelr1.sg-host.com/static/js/2.28bbd134.chunk.js.map",
+    "index.html": "http://emmanuelr1.sg-host.com/index.html",
+    "static/css/main.3ab15cf7.chunk.css.map": "http://emmanuelr1.sg-host.com/static/css/main.3ab15cf7.chunk.css.map",
+    "static/js/2.28bbd134.chunk.js.LICENSE.txt": "http://emmanuelr1.sg-host.com/static/js/2.28bbd134.chunk.js.LICENSE.txt",
+    "static/media/About.b163ed1e.jpg": "http://emmanuelr1.sg-host.com/static/media/About.b163ed1e.jpg",
+    "static/media/ContactUs.b14c64b6.jpg": "http://emmanuelr1.sg-host.com/static/media/ContactUs.b14c64b6.jpg",
+    "static/media/Homepagecentered.c8c769af.jpg": "http://emmanuelr1.sg-host.com/static/media/Homepagecentered.c8c769af.jpg",
+    "static/media/Mortgagecentered.7df79327.jpg": "http://emmanuelr1.sg-host.com/static/media/Mortgagecentered.7df79327.jpg",
+    "static/media/lenderLogo.a940bd48.png": "http://emmanuelr1.sg-host.com/static/media/lenderLogo.a940bd48.png",
+    "static/media/logofoot.f77ed0de.png": "http://emmanuelr1.sg-host.com/static/media/logofoot.f77ed0de.png",
+    "static/media/logonav.a4fad6da.png": "http://emmanuelr1.sg-host.com/static/media/logonav.a4fad6da.png",
+    "static/media/realestate.c53c2cc9.jpg": "http://emmanuelr1.sg-host.com/static/media/realestate.c53c2cc9.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.df779aae.js",
+    "static/js/runtime-main.82e9198a.js",
     "static/js/2.28bbd134.chunk.js",
     "static/css/main.3ab15cf7.chunk.css",
-    "static/js/main.e848a9c0.chunk.js"
+    "static/js/main.9aa02b0e.chunk.js"
   ]
 }
