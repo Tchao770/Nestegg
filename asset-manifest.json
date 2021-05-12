@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "http://emmanuelr1.sg-host.com/static/css/main.3ab15cf7.chunk.css",
-    "main.js": "http://emmanuelr1.sg-host.com/static/js/main.9aa02b0e.chunk.js",
-    "main.js.map": "http://emmanuelr1.sg-host.com/static/js/main.9aa02b0e.chunk.js.map",
-    "runtime-main.js": "http://emmanuelr1.sg-host.com/static/js/runtime-main.82e9198a.js",
-    "runtime-main.js.map": "http://emmanuelr1.sg-host.com/static/js/runtime-main.82e9198a.js.map",
-    "static/js/2.28bbd134.chunk.js": "http://emmanuelr1.sg-host.com/static/js/2.28bbd134.chunk.js",
-    "static/js/2.28bbd134.chunk.js.map": "http://emmanuelr1.sg-host.com/static/js/2.28bbd134.chunk.js.map",
-    "index.html": "http://emmanuelr1.sg-host.com/index.html",
-    "static/css/main.3ab15cf7.chunk.css.map": "http://emmanuelr1.sg-host.com/static/css/main.3ab15cf7.chunk.css.map",
-    "static/js/2.28bbd134.chunk.js.LICENSE.txt": "http://emmanuelr1.sg-host.com/static/js/2.28bbd134.chunk.js.LICENSE.txt",
-    "static/media/About.b163ed1e.jpg": "http://emmanuelr1.sg-host.com/static/media/About.b163ed1e.jpg",
-    "static/media/ContactUs.b14c64b6.jpg": "http://emmanuelr1.sg-host.com/static/media/ContactUs.b14c64b6.jpg",
-    "static/media/Homepagecentered.c8c769af.jpg": "http://emmanuelr1.sg-host.com/static/media/Homepagecentered.c8c769af.jpg",
-    "static/media/Mortgagecentered.7df79327.jpg": "http://emmanuelr1.sg-host.com/static/media/Mortgagecentered.7df79327.jpg",
-    "static/media/lenderLogo.a940bd48.png": "http://emmanuelr1.sg-host.com/static/media/lenderLogo.a940bd48.png",
-    "static/media/logofoot.f77ed0de.png": "http://emmanuelr1.sg-host.com/static/media/logofoot.f77ed0de.png",
-    "static/media/logonav.a4fad6da.png": "http://emmanuelr1.sg-host.com/static/media/logonav.a4fad6da.png",
-    "static/media/realestate.c53c2cc9.jpg": "http://emmanuelr1.sg-host.com/static/media/realestate.c53c2cc9.jpg"
+    "main.css": "/static/css/main.3ab15cf7.chunk.css",
+    "main.js": "/static/js/main.21e96ec2.chunk.js",
+    "main.js.map": "/static/js/main.21e96ec2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e7ac24bf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e7ac24bf.js.map",
+    "static/js/2.28bbd134.chunk.js": "/static/js/2.28bbd134.chunk.js",
+    "static/js/2.28bbd134.chunk.js.map": "/static/js/2.28bbd134.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3ab15cf7.chunk.css.map": "/static/css/main.3ab15cf7.chunk.css.map",
+    "static/js/2.28bbd134.chunk.js.LICENSE.txt": "/static/js/2.28bbd134.chunk.js.LICENSE.txt",
+    "static/media/About.b163ed1e.jpg": "/static/media/About.b163ed1e.jpg",
+    "static/media/ContactUs.b14c64b6.jpg": "/static/media/ContactUs.b14c64b6.jpg",
+    "static/media/Homepagecentered.c8c769af.jpg": "/static/media/Homepagecentered.c8c769af.jpg",
+    "static/media/Mortgagecentered.7df79327.jpg": "/static/media/Mortgagecentered.7df79327.jpg",
+    "static/media/lenderLogo.a940bd48.png": "/static/media/lenderLogo.a940bd48.png",
+    "static/media/logofoot.f77ed0de.png": "/static/media/logofoot.f77ed0de.png",
+    "static/media/logonav.a4fad6da.png": "/static/media/logonav.a4fad6da.png",
+    "static/media/realestate.c53c2cc9.jpg": "/static/media/realestate.c53c2cc9.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.82e9198a.js",
+    "static/js/runtime-main.e7ac24bf.js",
     "static/js/2.28bbd134.chunk.js",
     "static/css/main.3ab15cf7.chunk.css",
-    "static/js/main.9aa02b0e.chunk.js"
+    "static/js/main.21e96ec2.chunk.js"
   ]
 }
