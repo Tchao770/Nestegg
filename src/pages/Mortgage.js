@@ -24,9 +24,9 @@ function Mortgage() {
                 <h2 className="Quote">There’s more to a mortgage broker than just great rates.</h2>
                 <section>
                     <p>We believe that customer service and communication matter. Whether you’re an existing homeowner refinancing to get a lower payment or you’re a first time buyer, we keep you in the loop.</p>
-                    <br />
+                    <hr />
                     <p>We go above and beyond. Working for you isn’t only about making sure that mortgage transactions happen smoothly. We also strive to educate and inform our clients – so that you can make the best decision based on the best available information.</p>
-                    <br />
+                    <hr />
                     <p>Talk to us about getting a mortgage or use the calculator below to estimate your own savings!</p>
                 </section>
                 <MortgageCalculator />

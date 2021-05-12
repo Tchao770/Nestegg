@@ -2,22 +2,21 @@
     width: 70%;
     margin: auto;
     .Content {
+        margin-top: 3em;
         display: grid;
-        row-gap: 2em;
         hr {
             width: 100%;
+            margin: 3em 0;
         }
         .QuoteLeft {
             display: grid;
             grid-template-areas: "quote descr";
             grid-template-columns: 30% 70%;
             h3 {
-                padding: 0 1em;
                 grid-area: quote;
             }
             span {
                 grid-area: descr;
-                align-self: center;
                 font-size: 20px;
             }
         }
@@ -36,18 +35,17 @@
 // Smaller screen
 @media screen and (max-width: $smallerScreen) {
     .RealEstatePage {
+        width: 90%;
         .Content {
             .QuoteLeft {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                margin: 2em 0;
                 h3 {
+                    margin: 0 0 1em 0;
                     grid-area: quote;
                     text-align: center;
-                    justify-self: center;
-                    padding: 0;
-                    font-size: 20px;
+                    font-size: 17px;
                 }
                 span {
                     grid-area: descr;
