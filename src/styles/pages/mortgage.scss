@@ -1,18 +1,26 @@
+@import "../utilities/variables";
+
 .MortgagePage {
+    width: 70%;
     margin-top: 1em;
+    padding-bottom: 2em;
     width: 960px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     margin: auto;
-    p {
-        font-size: 20px;
-    }
-    hr{
-        width: 100%;
-        margin: 3em 0;
+    .TextSection {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        span {
+            font-size: 20px;
+            margin: auto;
+        }
+        hr {
+            width: 100%;
+            margin: 2em 0;
+        }
     }
     .Calculator {
+        padding-top: 2em;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -40,6 +48,14 @@
 @media screen and (max-width: $smallerScreen) {
     .MortgagePage {
         width: 90%;
+        .TextSection{
+            h3{
+                font-size: 17px;
+            }
+            span{
+                font-size: 15px;
+            }
+        }
         p {
             font-size: 15px;
         }

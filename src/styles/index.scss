@@ -2,8 +2,15 @@
 @import "components/index.scss";
 @import "pages/index.scss";
 
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .App {
     font-family: "Raleway", sans-serif;
+    height: 100%;
     position: relative;
-    min-height: 100vh;
+    padding-bottom: 5em;
 }

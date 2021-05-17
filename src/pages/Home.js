@@ -9,7 +9,7 @@ function Home({ match }) {
 			<article className="ArticleStyle">
 				<h1 className="Quote">Your home starts with you.</h1>
 				<div className="HomePage">
-					<section className="AboutSection">
+					<section className="TextSection">
 						<div className="QuoteLeft">
 							<h3><i>Home is more than just where you live.</i></h3>
 							<span>
