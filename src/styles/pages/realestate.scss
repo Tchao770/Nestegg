@@ -7,10 +7,6 @@
     .Content {
         margin-top: 3em;
         display: grid;
-        hr {
-            width: 100%;
-            margin: 3em 0;
-        }
         .QuoteLeft {
             display: grid;
             grid-template-areas: "quote descr";
@@ -46,14 +42,12 @@
                 justify-content: center;
                 h3 {
                     margin: 0 0 1em 0;
-                    grid-area: quote;
                     text-align: center;
                     font-size: 17px;
                 }
                 span {
-                    grid-area: descr;
-                    justify-self: center;
                     font-size: 15px;
+                    margin: auto;
                 }
             }
         }

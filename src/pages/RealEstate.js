@@ -1,6 +1,5 @@
 import PhotoHeading from "../components/PhotoHeading";
 import realestateImg from "../assets/realestate.jpg";
-import ArticleDiv from "../components/ArticleDiv";
 import { Link } from "react-router-dom";
 
 const buyParagraph =

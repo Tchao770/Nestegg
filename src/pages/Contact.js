@@ -15,12 +15,10 @@ function Contact() {
                 <div className="MoreInfo">
                     {/*<GoogleMapReact />*/}
                     {/* <p className="ContactDetailsTitle">OUR OFFICE</p> */}
-                    <p className="Paragraph">
-                        12437 Lewis Street, Suite 206<br />
-                        Garden Grove, CA 92840
-                    </p>
                     {/* <p className="ContactDetailsTitle">CONTACT</p> */}
                     <p className="Paragraph">
+                        12437 Lewis Street, Suite 206<br />
+                        Garden Grove, CA 92840<br />
                         info@nestegginc.net<br />
                         714.907.4381<br />
                     </p>
@@ -38,7 +36,7 @@ function Contact() {
                         width="500px"
                         height="700px"
                         id="CitrixDropbox"
-                        title="CitrixDropbox"/>
+                        title="CitrixDropbox" />
                 </div>
             </div>
         </div>
