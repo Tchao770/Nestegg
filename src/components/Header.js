@@ -1,22 +1,23 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logonav.png";
-import { IconContext } from "react-icons";
-import { HiMenu } from "react-icons/hi";
 
 function NavMenu() {
     return (
-        <IconContext.Provider value={{ size: "3em", color: "black" }}>
-            <div className="icon Nav-Mobile-Header">
-                <HiMenu className="Nav-Mobile" onClick={() => myFunction()} />
-            </div>
-        </IconContext.Provider>
+        <div id="Nav-Mobile-Hamburger" onClick={() => myFunction()}>
+            <div className="line-1"></div>
+            <div className="line-2"></div>
+            <div className="line-3"></div>
+        </div>
     );
 }
 
 function myFunction() {
     var x = document.getElementById("NavBar-id");
+    var y = document.getElementById("Nav-Mobile-Hamburger");
+    y.classList.toggle("rotate-icon");
     if (x.className === "NavBar") {
         x.className += `Responsive`;
+
     } else {
         x.className = "NavBar";
     }

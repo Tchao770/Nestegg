@@ -49,14 +49,23 @@
     width: 167px;
 }
 
-.Nav-Mobile-Header {
+#Nav-Mobile-Hamburger {
     display: none;
     position: absolute;
     cursor: pointer;
+    .line-1,
+    .line-2,
+    .line-3 {
+        background-color: black;
+        width: 40px;
+        height: 4px;
+        transition: 0.5s;
+        margin: 7px 0;
+    }
 }
 // Smaller screens
 @media screen and (max-width: 1300px) {
-    // Removes link buttons from header
+    // Removes link buttons from Hamburger
     .NavBar {
         a:not(:first-child) {
             display: none;
@@ -68,21 +77,34 @@
                 opacity: 0;
             }
         }
-        .Nav-Mobile-Header {
+        // Make hamburger appear
+        #Nav-Mobile-Hamburger {
             position: relative;
             display: inline-block;
         }
     }
-    // Make hamburger appear
-    // New class for navbar
+    // On Click
     .NavBarResponsive {
         position: relative;
         padding: 20px 30px;
-        .Nav-Mobile-Header {
+        #Nav-Mobile-Hamburger {
             display: inline-block;
             position: absolute;
             right: 30px;
-            top: 33px;
+            top: 39px;
+        }
+        .rotate-icon {
+            .line-1 {
+                -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+                transform: rotate(-45deg) translate(-8px, 6px);
+            }
+            .line-2 {
+                opacity: 0;
+            }
+            .line-3 {
+                -webkit-transform: rotate(42deg) translate(-9px, -8px);
+                transform: rotate(42deg) translate(-9px, -8px);
+            }
         }
         .Link-List {
             width: 100%;
