@@ -4,4 +4,4 @@ Technologies used:
 - React
 - React Router
 - SASS
-- Bootstrap
+- Webpack
