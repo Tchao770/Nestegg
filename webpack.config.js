@@ -43,7 +43,7 @@ module.exports = {
         port: 8080,
         contentBase: path.resolve(__dirname, 'dist'),
         open: true,
-
+        historyApiFallback: true,
         watchOptions: {
             poll: true,
             ignored: "/node_modules/"
