@@ -27,11 +27,15 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'] // Note that postcss loader must come before sass-loader
             },
             {
-                test: /\.(jpe?g|png|gif|svg)$/i, 
+                test: /\.(jpe?g|png|gif)$/i, 
                 loader: 'file-loader',
                 options: {
                   name: '/assets/[name].[ext]'
                 }
+            },
+            {
+                test: /\.svg$/,
+                use:['@svgr/webpack'],
             }
         ]
     },

@@ -3,31 +3,72 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 5em;
+    height: 10rem;
+    padding: 0.5rem 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    .SitemapList {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .SocialIcons {
+        width: 30%;
+        height: 24px;
+        display: inherit;
+        justify-content: space-around;
+        a {
+            color: black;
+            svg {
+                fill: none;
+                cursor: pointer;
+                transition: color 0.5s ease;
+            }
+        }
+        #FB:hover {
+            color: #2d88ff;
+        }
+        #IG:hover {
+            color: #dd2a7b;
+        }
+        #TW:hover {
+            color: #1da1f2;
+        }
+    }
+    .FooterAddress {
+        padding: 0;
+        p {
+            color: black;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
     .FooterImg {
-        padding: 0 1em;
         img {
             max-width: 100px;
             user-select: none;
         }
-    }
-    p {
-        color: black;
-        margin-bottom: 0;
-        font-size: 12px;
-        text-align: center;
     }
 }
 // Mobile Screens
 // Should account for minimum size 360px
 @media screen and (max-width: 700px) {
     .FooterClass {
-        p {
-            font-size: 6px;
+        height: 7rem;
+        .FooterAddress {
+            p {
+                font-size: 9px;
+            }
+        }
+        .SocialIcons {
+            width: 100%;
+        }
+        .FooterImg{
+            img{
+                max-width: 50px;
+            }
         }
     }
 }

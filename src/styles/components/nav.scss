@@ -25,7 +25,6 @@
         visibility: visible;
         transform: scaleX(1);
     }
-
     .Link:before {
         content: "";
         position: absolute;
@@ -46,6 +45,8 @@
 
 .Nav-Home {
     padding-top: 5px;
+    position: relative;
+    top: 5px;
     width: 167px;
 }
 
