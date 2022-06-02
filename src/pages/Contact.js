@@ -17,7 +17,7 @@ function Contact() {
                     {/* <p className="ContactDetailsTitle">OUR OFFICE</p> */}
                     {/* <p className="ContactDetailsTitle">CONTACT</p> */}
                     <p className="Paragraph">
-                        12437 Lewis Street, Suite 206<br />
+                        12419 Lewis Street, Suite 206<br />
                         Garden Grove, CA 92840<br />
                         info@nestegginc.net<br />
                         714.907.4381<br />
